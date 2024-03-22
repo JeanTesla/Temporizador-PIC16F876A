@@ -1,0 +1,419 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"216 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"1275
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"27 main.c
+[; ;main.c: 27:     RCSTA = 0b10010010;
+[v _init_usart `(v ~T0 @X0 0 ef ]
+"959 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
+"1774
+[v _TXSTA `Vuc ~T0 @X0 0 e@152 ]
+"864
+[v _RCSTA `Vuc ~T0 @X0 0 e@24 ]
+"1855
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"2732
+[v _TXIF `Vb ~T0 @X0 0 e@100 ]
+"2504
+[v _RCIF `Vb ~T0 @X0 0 e@101 ]
+"2705
+[v _TRISC6 `Vb ~T0 @X0 0 e@1086 ]
+"2708
+[v _TRISC7 `Vb ~T0 @X0 0 e@1087 ]
+"366
+[s S18 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S18 . RBIF INTF TMR0IF RBIE INTE TMR0IE PEIE GIE ]
+"376
+[s S19 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S19 . . T0IF . T0IE ]
+"365
+[u S17 `S18 1 `S19 1 ]
+[n S17 . . . ]
+"383
+[v _INTCONbits `VS17 ~T0 @X0 0 e@11 ]
+"1405
+[s S60 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S60 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE ]
+"1404
+[u S59 `S60 1 ]
+[n S59 . . ]
+"1415
+[v _PIE1bits `VS59 ~T0 @X0 0 e@140 ]
+"1780
+[s S77 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S77 . TX9D TRMT BRGH . SYNC TXEN TX9 CSRC ]
+"1790
+[s S78 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S78 . TXD8 . nTX8 ]
+"1795
+[s S79 :6 `uc 1 :1 `uc 1 ]
+[n S79 . . TX8_9 ]
+"1779
+[u S76 `S77 1 `S78 1 `S79 1 ]
+[n S76 . . . . ]
+"1800
+[v _TXSTAbits `VS76 ~T0 @X0 0 e@152 ]
+"222
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"221
+[u S11 `S12 1 ]
+[n S11 . . ]
+"233
+[v _PORTBbits `VS11 ~T0 @X0 0 e@6 ]
+"966
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"870
+[s S38 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S38 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"880
+[s S39 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S39 . RCD8 . RC9 ]
+"885
+[s S40 :6 `uc 1 :1 `uc 1 ]
+[n S40 . . nRC8 ]
+"889
+[s S41 :6 `uc 1 :1 `uc 1 ]
+[n S41 . . RC8_9 ]
+"869
+[u S37 `S38 1 `S39 1 `S40 1 `S41 1 ]
+[n S37 . . . . . ]
+"894
+[v _RCSTAbits `VS37 ~T0 @X0 0 e@24 ]
+"2294
+[v _CREN `Vb ~T0 @X0 0 e@196 ]
+"8 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"218
+[; <" PORTB equ 06h ;# ">
+"280
+[; <" PORTC equ 07h ;# ">
+"342
+[; <" PCLATH equ 0Ah ;# ">
+"362
+[; <" INTCON equ 0Bh ;# ">
+"440
+[; <" PIR1 equ 0Ch ;# ">
+"496
+[; <" PIR2 equ 0Dh ;# ">
+"536
+[; <" TMR1 equ 0Eh ;# ">
+"543
+[; <" TMR1L equ 0Eh ;# ">
+"550
+[; <" TMR1H equ 0Fh ;# ">
+"557
+[; <" T1CON equ 010h ;# ">
+"632
+[; <" TMR2 equ 011h ;# ">
+"639
+[; <" T2CON equ 012h ;# ">
+"710
+[; <" SSPBUF equ 013h ;# ">
+"717
+[; <" SSPCON equ 014h ;# ">
+"787
+[; <" CCPR1 equ 015h ;# ">
+"794
+[; <" CCPR1L equ 015h ;# ">
+"801
+[; <" CCPR1H equ 016h ;# ">
+"808
+[; <" CCP1CON equ 017h ;# ">
+"866
+[; <" RCSTA equ 018h ;# ">
+"961
+[; <" TXREG equ 019h ;# ">
+"968
+[; <" RCREG equ 01Ah ;# ">
+"975
+[; <" CCPR2 equ 01Bh ;# ">
+"982
+[; <" CCPR2L equ 01Bh ;# ">
+"989
+[; <" CCPR2H equ 01Ch ;# ">
+"996
+[; <" CCP2CON equ 01Dh ;# ">
+"1054
+[; <" ADRESH equ 01Eh ;# ">
+"1061
+[; <" ADCON0 equ 01Fh ;# ">
+"1157
+[; <" OPTION_REG equ 081h ;# ">
+"1227
+[; <" TRISA equ 085h ;# ">
+"1277
+[; <" TRISB equ 086h ;# ">
+"1339
+[; <" TRISC equ 087h ;# ">
+"1401
+[; <" PIE1 equ 08Ch ;# ">
+"1457
+[; <" PIE2 equ 08Dh ;# ">
+"1497
+[; <" PCON equ 08Eh ;# ">
+"1531
+[; <" SSPCON2 equ 091h ;# ">
+"1593
+[; <" PR2 equ 092h ;# ">
+"1600
+[; <" SSPADD equ 093h ;# ">
+"1607
+[; <" SSPSTAT equ 094h ;# ">
+"1776
+[; <" TXSTA equ 098h ;# ">
+"1857
+[; <" SPBRG equ 099h ;# ">
+"1864
+[; <" CMCON equ 09Ch ;# ">
+"1934
+[; <" CVRCON equ 09Dh ;# ">
+"1999
+[; <" ADRESL equ 09Eh ;# ">
+"2006
+[; <" ADCON1 equ 09Fh ;# ">
+"2065
+[; <" EEDATA equ 010Ch ;# ">
+"2072
+[; <" EEADR equ 010Dh ;# ">
+"2079
+[; <" EEDATH equ 010Eh ;# ">
+"2086
+[; <" EEADRH equ 010Fh ;# ">
+"2093
+[; <" EECON1 equ 018Ch ;# ">
+"2138
+[; <" EECON2 equ 018Dh ;# ">
+"16 main.c
+[; ;main.c: 16:     while (1) {
+[p x FOSC  =  HS         ]
+"17
+[; ;main.c: 17: 
+[p x WDTE  =  OFF        ]
+"18
+[; ;main.c: 18: 
+[p x PWRTE  =  OFF       ]
+"19
+[; ;main.c: 19: 
+[p x BOREN  =  OFF       ]
+"20
+[; ;main.c: 20:     }
+[p x LVP  =  OFF         ]
+"21
+[; ;main.c: 21:     return;
+[p x CPD  =  OFF         ]
+"22
+[; ;main.c: 22: }
+[p x WRT  =  OFF         ]
+"23
+[; ;main.c: 23: 
+[p x CP  =  OFF          ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"32
+[; ;main.c: 32:     INTCONbits.GIE = 1;
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"35
+[; ;main.c: 35:     PIE1bits.RCIE = 1;
+[e = _PORTB -> -> 0 `i `uc ]
+"36
+[; ;main.c: 36:     TXSTAbits.TRMT = 1;
+[e = _TRISB -> -> 0 `i `uc ]
+"38
+[; ;main.c: 38: 
+[e ( _init_usart ..  ]
+"39
+[; ;main.c: 39: void wusart(unsigned char byte) {
+[v _a `uc ~T0 @X0 1 a ]
+[e = _a -> _TXREG `uc ]
+"41
+[; ;main.c: 41:     while (!TXIF);
+[e :U 93 ]
+{
+"45
+[; ;main.c: 45: 
+}
+[e :U 92 ]
+[e $U 93  ]
+[e :U 94 ]
+"46
+[; ;main.c: 46: unsigned char rusart() {
+[e $UE 91  ]
+"47
+[; ;main.c: 47:     RCIF = 0;
+[e :UE 91 ]
+}
+"50
+[; ;main.c: 50: }
+[v _init_usart `(v ~T0 @X0 1 ef ]
+{
+[e :U _init_usart ]
+[f ]
+"51
+[; ;main.c: 51: 
+[e = _TXSTA -> -> 34 `i `uc ]
+"52
+[; ;main.c: 52: void txstr(unsigned char *s) {
+[e = _RCSTA -> -> 146 `i `uc ]
+"53
+[; ;main.c: 53:     while (*s) {
+[e = _SPBRG -> -> 12 `i `uc ]
+"54
+[; ;main.c: 54:         wusart(*s++);
+[e = _TXIF -> = _RCIF -> -> 1 `i `b `b ]
+"55
+[; ;main.c: 55:     }
+[e = _TRISC6 -> -> 0 `i `b ]
+"56
+[; ;main.c: 56: }
+[e = _TRISC7 -> -> 1 `i `b ]
+"57
+[; ;main.c: 57: 
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"58
+[; ;main.c: 58: void __attribute__((picinterrupt(("")))) meuISR() {
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+"59
+[; ;main.c: 59: 
+[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
+"60
+[; ;main.c: 60:     if (RCIF == 1) {
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+"61
+[; ;main.c: 61:         if (RCSTAbits.OERR || RCSTAbits.FERR) {
+[e = . . _TXSTAbits 0 1 -> -> 1 `i `uc ]
+"62
+[; ;main.c: 62:             CREN = 0;
+[e :UE 95 ]
+}
+"64
+[; ;main.c: 64:             CREN = 1;
+[v _wusart `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _wusart ]
+[v _byte `uc ~T0 @X0 1 r1 ]
+[f ]
+"65
+[; ;main.c: 65:         }
+[e = . . _PORTBbits 0 3 -> -> 1 `i `uc ]
+"66
+[; ;main.c: 66:         char byte = RCREG;
+[e $U 97  ]
+[e :U 98 ]
+[e :U 97 ]
+[e $ ! _TXIF 98  ]
+[e :U 99 ]
+"67
+[; ;main.c: 67:         if (byte == 'A') {
+[e = _TXREG _byte ]
+"68
+[; ;main.c: 68:             PORTBbits.RB0 = ~PORTBbits.RB0;
+[e = . . _PORTBbits 0 3 -> -> 0 `i `uc ]
+"69
+[; ;main.c: 69: 
+[e :UE 96 ]
+}
+"71
+[; ;main.c: 71:         RCIF = 0;
+[v _rusart `(uc ~T0 @X0 1 ef ]
+{
+[e :U _rusart ]
+[f ]
+"72
+[; ;main.c: 72:     }
+[e = _RCIF -> -> 0 `i `b ]
+"73
+[; ;main.c: 73: 
+[e $U 101  ]
+[e :U 102 ]
+[e :U 101 ]
+[e $ ! _RCIF 102  ]
+[e :U 103 ]
+"74
+[; ;main.c: 74: }
+[e ) _RCREG ]
+[e $UE 100  ]
+"75
+[e :UE 100 ]
+}
+"77
+[v _txstr `(v ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _txstr ]
+[v _s `*uc ~T0 @X0 1 r1 ]
+[f ]
+"78
+[e $U 105  ]
+[e :U 106 ]
+{
+"79
+[e ( _wusart (1 *U ++ _s * -> -> 1 `i `x -> -> # *U _s `i `x ]
+"80
+}
+[e :U 105 ]
+"78
+[e $ != -> *U _s `i -> 0 `i 106  ]
+[e :U 107 ]
+"81
+[e :UE 104 ]
+}
+[v $root$_meuISR `(v ~T0 @X0 0 e ]
+"83
+[v _meuISR `(v ~T1 @X0 1 ef ]
+{
+[e :U _meuISR ]
+[f ]
+"85
+[e $ ! == -> _RCIF `i -> 1 `i 109  ]
+{
+"86
+[e $ ! || != -> . . _RCSTAbits 0 1 `i -> 0 `i != -> . . _RCSTAbits 0 2 `i -> 0 `i 110  ]
+{
+"87
+[e = _CREN -> -> 0 `i `b ]
+"88
+[e ( ___nop ..  ]
+"89
+[e = _CREN -> -> 1 `i `b ]
+"90
+}
+[e :U 110 ]
+"91
+[v _byte `uc ~T0 @X0 1 a ]
+[e = _byte -> _RCREG `uc ]
+"92
+[e $ ! == -> _byte `ui -> 65 `ui 111  ]
+{
+"93
+[e = . . _PORTBbits 0 0 -> ~ -> . . _PORTBbits 0 0 `i `uc ]
+"95
+}
+[e :U 111 ]
+"96
+[e = _RCIF -> -> 0 `i `b ]
+"97
+}
+[e :U 109 ]
+"99
+[e :UE 108 ]
+}

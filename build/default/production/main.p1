@@ -1,0 +1,678 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"166 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"1225
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"216
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"1275
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"278
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"1337
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"2004
+[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
+"1862
+[v _CMCON `Vuc ~T0 @X0 0 e@156 ]
+"561
+[s S25 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 ]
+[n S25 . TMR1ON TMR1CS nT1SYNC T1OSCEN T1CKPS ]
+"568
+[s S26 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S26 . . T1SYNC . T1CKPS0 T1CKPS1 ]
+"575
+[s S27 :2 `uc 1 :1 `uc 1 ]
+[n S27 . . T1INSYNC ]
+"560
+[u S24 `S25 1 `S26 1 `S27 1 ]
+[n S24 . . . . ]
+"580
+[v _T1CONbits `VS24 ~T0 @X0 0 e@16 ]
+"5 ./interruptions.h
+[; ;./interruptions.h: 5: void config_global_interruptions();
+[v _config_global_interruptions `(v ~T0 @X0 0 e? ]
+"3 ./uart_interface.h
+[; ;./uart_interface.h: 3: void uart_init();
+[; ;./uart_interface.h: 3: void uart_init();
+[; ;./uart_interface.h: 3: void uart_init();
+[v _uart_init `(v ~T0 @X0 0 e? ]
+"44 main.c
+[; ;main.c: 44: void trigger_relay();
+[v _trigger_relay `(v ~T0 @X0 0 e? ]
+"172 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S10 . RA0 RA1 RA2 RA3 RA4 RA5 ]
+"171
+[u S9 `S10 1 ]
+[n S9 . . ]
+"181
+[v _PORTAbits `VS9 ~T0 @X0 0 e@5 ]
+[v F164 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\builtins.h
+[v __delay `JF164 ~T0 @X0 0 e ]
+[p i __delay ]
+"45 main.c
+[; ;main.c: 45: void counters_reset();
+[v _counters_reset `(v ~T0 @X0 0 e? ]
+"8 ./common_anode_display.h
+[; ;./common_anode_display.h: 8: void disp_config_mode(short int config_number);
+[v _disp_config_mode `(v ~T0 @X0 0 ef1`s ]
+"7
+[; ;./common_anode_display.h: 7: void disp_print(unsigned int number);
+[v _disp_print `(v ~T0 @X0 0 ef1`ui ]
+[t ~ __interrupt . k ]
+[t T5 __interrupt ]
+"2504 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[v _RCIF `Vb ~T0 @X0 0 e@101 ]
+"870
+[s S38 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S38 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"880
+[s S39 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S39 . RCD8 . RC9 ]
+"885
+[s S40 :6 `uc 1 :1 `uc 1 ]
+[n S40 . . nRC8 ]
+"889
+[s S41 :6 `uc 1 :1 `uc 1 ]
+[n S41 . . RC8_9 ]
+"869
+[u S37 `S38 1 `S39 1 `S40 1 `S41 1 ]
+[n S37 . . . . . ]
+"894
+[v _RCSTAbits `VS37 ~T0 @X0 0 e@24 ]
+"2294
+[v _CREN `Vb ~T0 @X0 0 e@196 ]
+"8 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"966 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
+"2579
+[v _T0IF `Vb ~T0 @X0 0 e@90 ]
+"43 main.c
+[; ;main.c: 43: void bip();
+[v _bip `(v ~T0 @X0 0 e? ]
+"284 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[s S14 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S14 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"283
+[u S13 `S14 1 ]
+[n S13 . . ]
+"295
+[v _PORTCbits `VS13 ~T0 @X0 0 e@7 ]
+"59
+[v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+"54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"218
+[; <" PORTB equ 06h ;# ">
+"280
+[; <" PORTC equ 07h ;# ">
+"342
+[; <" PCLATH equ 0Ah ;# ">
+"362
+[; <" INTCON equ 0Bh ;# ">
+"440
+[; <" PIR1 equ 0Ch ;# ">
+"496
+[; <" PIR2 equ 0Dh ;# ">
+"536
+[; <" TMR1 equ 0Eh ;# ">
+"543
+[; <" TMR1L equ 0Eh ;# ">
+"550
+[; <" TMR1H equ 0Fh ;# ">
+"557
+[; <" T1CON equ 010h ;# ">
+"632
+[; <" TMR2 equ 011h ;# ">
+"639
+[; <" T2CON equ 012h ;# ">
+"710
+[; <" SSPBUF equ 013h ;# ">
+"717
+[; <" SSPCON equ 014h ;# ">
+"787
+[; <" CCPR1 equ 015h ;# ">
+"794
+[; <" CCPR1L equ 015h ;# ">
+"801
+[; <" CCPR1H equ 016h ;# ">
+"808
+[; <" CCP1CON equ 017h ;# ">
+"866
+[; <" RCSTA equ 018h ;# ">
+"961
+[; <" TXREG equ 019h ;# ">
+"968
+[; <" RCREG equ 01Ah ;# ">
+"975
+[; <" CCPR2 equ 01Bh ;# ">
+"982
+[; <" CCPR2L equ 01Bh ;# ">
+"989
+[; <" CCPR2H equ 01Ch ;# ">
+"996
+[; <" CCP2CON equ 01Dh ;# ">
+"1054
+[; <" ADRESH equ 01Eh ;# ">
+"1061
+[; <" ADCON0 equ 01Fh ;# ">
+"1157
+[; <" OPTION_REG equ 081h ;# ">
+"1227
+[; <" TRISA equ 085h ;# ">
+"1277
+[; <" TRISB equ 086h ;# ">
+"1339
+[; <" TRISC equ 087h ;# ">
+"1401
+[; <" PIE1 equ 08Ch ;# ">
+"1457
+[; <" PIE2 equ 08Dh ;# ">
+"1497
+[; <" PCON equ 08Eh ;# ">
+"1531
+[; <" SSPCON2 equ 091h ;# ">
+"1593
+[; <" PR2 equ 092h ;# ">
+"1600
+[; <" SSPADD equ 093h ;# ">
+"1607
+[; <" SSPSTAT equ 094h ;# ">
+"1776
+[; <" TXSTA equ 098h ;# ">
+"1857
+[; <" SPBRG equ 099h ;# ">
+"1864
+[; <" CMCON equ 09Ch ;# ">
+"1934
+[; <" CVRCON equ 09Dh ;# ">
+"1999
+[; <" ADRESL equ 09Eh ;# ">
+"2006
+[; <" ADCON1 equ 09Fh ;# ">
+"2065
+[; <" EEDATA equ 010Ch ;# ">
+"2072
+[; <" EEADR equ 010Dh ;# ">
+"2079
+[; <" EEDATH equ 010Eh ;# ">
+"2086
+[; <" EEADRH equ 010Fh ;# ">
+"2093
+[; <" EECON1 equ 018Ch ;# ">
+"2138
+[; <" EECON2 equ 018Dh ;# ">
+"15 main.c
+[p x FOSC  =  HS         ]
+"16
+[p x WDTE  =  OFF        ]
+"17
+[p x PWRTE  =  OFF       ]
+"18
+[p x BOREN  =  OFF       ]
+"19
+[p x LVP  =  OFF         ]
+"20
+[p x CPD  =  OFF         ]
+"21
+[p x WRT  =  OFF         ]
+"22
+[p x CP  =  OFF          ]
+"32
+[; ;main.c: 32: unsigned long tick_timer_count = 1;
+[v _tick_timer_count `ul ~T0 @X0 1 e ]
+[i _tick_timer_count
+-> -> -> 1 `i `l `ul
+]
+"34
+[; ;main.c: 34: unsigned short int button_timer_count = 1,
+[v _button_timer_count `us ~T0 @X0 1 e ]
+[i _button_timer_count
+-> -> 1 `i `us
+]
+"35
+[; ;main.c: 35:         display_value = 0,
+[v _display_value `us ~T0 @X0 1 e ]
+[i _display_value
+-> -> 0 `i `us
+]
+"36
+[; ;main.c: 36:         config_mode_value = 1,
+[v _config_mode_value `us ~T0 @X0 1 e ]
+[i _config_mode_value
+-> -> 1 `i `us
+]
+"37
+[; ;main.c: 37:         decrement_wait_time_multiplier = 1,
+[v _decrement_wait_time_multiplier `us ~T0 @X0 1 e ]
+[i _decrement_wait_time_multiplier
+-> -> 1 `i `us
+]
+"38
+[; ;main.c: 38:         last_decrement_wait_time_multiplier = 1;
+[v _last_decrement_wait_time_multiplier `us ~T0 @X0 1 e ]
+[i _last_decrement_wait_time_multiplier
+-> -> 1 `i `us
+]
+"40
+[; ;main.c: 40: _Bool is_enabled_bip = 0;
+[v _is_enabled_bip `a ~T0 @X0 1 e ]
+[i _is_enabled_bip
+-> -> 0 `i `a
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"47
+[; ;main.c: 47: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"49
+[; ;main.c: 49:     PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"50
+[; ;main.c: 50:     TRISA = 0b00000111;
+[e = _TRISA -> -> 7 `i `uc ]
+"51
+[; ;main.c: 51:     PORTB = 0b00000000;
+[e = _PORTB -> -> 0 `i `uc ]
+"52
+[; ;main.c: 52:     TRISB = 0b00000000;
+[e = _TRISB -> -> 0 `i `uc ]
+"53
+[; ;main.c: 53:     PORTC = 0b00000000;
+[e = _PORTC -> -> 0 `i `uc ]
+"54
+[; ;main.c: 54:     TRISC = 0b10000000;
+[e = _TRISC -> -> 128 `i `uc ]
+"55
+[; ;main.c: 55:     ADCON1 = 7;
+[e = _ADCON1 -> -> 7 `i `uc ]
+"56
+[; ;main.c: 56:     CMCON = 7;
+[e = _CMCON -> -> 7 `i `uc ]
+"57
+[; ;main.c: 57:     T1CONbits.T1OSCEN = 0;
+[e = . . _T1CONbits 0 3 -> -> 0 `i `uc ]
+"59
+[; ;main.c: 59:     config_global_interruptions();
+[e ( _config_global_interruptions ..  ]
+"60
+[; ;main.c: 60:     uart_init();
+[e ( _uart_init ..  ]
+"62
+[; ;main.c: 62:     while (1) {
+[e :U 95 ]
+{
+"64
+[; ;main.c: 64:         if (display_value > 0) {
+[e $ ! > -> _display_value `ui -> -> 0 `i `ui 97  ]
+{
+"65
+[; ;main.c: 65:             is_enabled_bip = 1;
+[e = _is_enabled_bip -> -> 1 `i `a ]
+"66
+[; ;main.c: 66:             trigger_relay();
+[e ( _trigger_relay ..  ]
+"67
+[; ;main.c: 67:         }
+}
+[e :U 97 ]
+"69
+[; ;main.c: 69:         while (PORTAbits.RA0) {
+[e $U 98  ]
+[e :U 99 ]
+{
+"70
+[; ;main.c: 70:             if (PORTAbits.RA2 && (config_mode_value < 3)) {
+[e $ ! && != -> . . _PORTAbits 0 2 `i -> 0 `i < -> _config_mode_value `ui -> -> 3 `i `ui 101  ]
+{
+"71
+[; ;main.c: 71:                     config_mode_value++;
+[e ++ _config_mode_value -> -> 1 `i `us ]
+"72
+[; ;main.c: 72:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"73
+[; ;main.c: 73:             }
+}
+[e :U 101 ]
+"74
+[; ;main.c: 74:             if (PORTAbits.RA1 && (config_mode_value > 1)) {
+[e $ ! && != -> . . _PORTAbits 0 1 `i -> 0 `i > -> _config_mode_value `ui -> -> 1 `i `ui 102  ]
+{
+"75
+[; ;main.c: 75:                     config_mode_value--;
+[e -- _config_mode_value -> -> 1 `i `us ]
+"76
+[; ;main.c: 76:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"77
+[; ;main.c: 77:             }
+}
+[e :U 102 ]
+"79
+[; ;main.c: 79:             switch (config_mode_value) {
+[e $U 104  ]
+{
+"80
+[; ;main.c: 80:                 case 1:
+[e :U 105 ]
+"82
+[; ;main.c: 82:                     decrement_wait_time_multiplier = 1;
+[e = _decrement_wait_time_multiplier -> -> 1 `i `us ]
+"83
+[; ;main.c: 83:                     counters_reset();
+[e ( _counters_reset ..  ]
+"84
+[; ;main.c: 84:                     break;
+[e $U 103  ]
+"85
+[; ;main.c: 85:                 case 2:
+[e :U 106 ]
+"87
+[; ;main.c: 87:                     decrement_wait_time_multiplier = 60;
+[e = _decrement_wait_time_multiplier -> -> 60 `i `us ]
+"88
+[; ;main.c: 88:                     counters_reset();
+[e ( _counters_reset ..  ]
+"89
+[; ;main.c: 89:                     break;
+[e $U 103  ]
+"90
+[; ;main.c: 90:                 case 3:
+[e :U 107 ]
+"92
+[; ;main.c: 92:                     decrement_wait_time_multiplier = 3600;
+[e = _decrement_wait_time_multiplier -> -> 3600 `i `us ]
+"93
+[; ;main.c: 93:                     counters_reset();
+[e ( _counters_reset ..  ]
+"94
+[; ;main.c: 94:                     break;
+[e $U 103  ]
+"95
+[; ;main.c: 95:             }
+}
+[e $U 103  ]
+[e :U 104 ]
+[e [\ -> _config_mode_value `ui , $ -> -> 1 `i `ui 105
+ , $ -> -> 2 `i `ui 106
+ , $ -> -> 3 `i `ui 107
+ 103 ]
+[e :U 103 ]
+"97
+[; ;main.c: 97:             disp_config_mode(config_mode_value);
+[e ( _disp_config_mode (1 -> _config_mode_value `s ]
+"99
+[; ;main.c: 99:         }
+}
+[e :U 98 ]
+"69
+[; ;main.c: 69:         while (PORTAbits.RA0) {
+[e $ != -> . . _PORTAbits 0 0 `i -> 0 `i 99  ]
+[e :U 100 ]
+"101
+[; ;main.c: 101:         disp_print(display_value);
+[e ( _disp_print (1 -> _display_value `ui ]
+"103
+[; ;main.c: 103:     }
+}
+[e :U 94 ]
+[e $U 95  ]
+[e :U 96 ]
+"104
+[; ;main.c: 104:     return;
+[e $UE 93  ]
+"105
+[; ;main.c: 105: }
+[e :UE 93 ]
+}
+[v $root$_my_interruptions `(v ~T0 @X0 0 e ]
+"107
+[; ;main.c: 107: void __attribute__((picinterrupt(("")))) my_interruptions() {
+[v _my_interruptions `(v ~T5 @X0 1 ef ]
+{
+[e :U _my_interruptions ]
+[f ]
+"108
+[; ;main.c: 108:     if (RCIF == 1) {
+[e $ ! == -> _RCIF `i -> 1 `i 109  ]
+{
+"109
+[; ;main.c: 109:         if (RCSTAbits.OERR || RCSTAbits.FERR) {
+[e $ ! || != -> . . _RCSTAbits 0 1 `i -> 0 `i != -> . . _RCSTAbits 0 2 `i -> 0 `i 110  ]
+{
+"110
+[; ;main.c: 110:             CREN = 0;
+[e = _CREN -> -> 0 `i `b ]
+"111
+[; ;main.c: 111:             __nop();
+[e ( ___nop ..  ]
+"112
+[; ;main.c: 112:             CREN = 1;
+[e = _CREN -> -> 1 `i `b ]
+"113
+[; ;main.c: 113:         }
+}
+[e :U 110 ]
+"114
+[; ;main.c: 114:         char byte = RCREG;
+[v _byte `uc ~T0 @X0 1 a ]
+[e = _byte -> _RCREG `uc ]
+"115
+[; ;main.c: 115:         if (byte == 'A') {
+[e $ ! == -> _byte `ui -> 65 `ui 111  ]
+{
+"117
+[; ;main.c: 117:         }
+}
+[e :U 111 ]
+"118
+[; ;main.c: 118:         RCIF = 0;
+[e = _RCIF -> -> 0 `i `b ]
+"119
+[; ;main.c: 119:     }
+}
+[e :U 109 ]
+"121
+[; ;main.c: 121:     if (T0IF) {
+[e $ ! _T0IF 112  ]
+{
+"130
+[; ;main.c: 130:         if (tick_timer_count ==
+[e $ ! == _tick_timer_count -> * -> -> 1000 `i `ui -> _decrement_wait_time_multiplier `ui `ul 113  ]
+"132
+[; ;main.c: 132:                 ) {
+{
+"134
+[; ;main.c: 134:             if (!PORTAbits.RA2 && !PORTAbits.RA1) {
+[e $ ! && ! != -> . . _PORTAbits 0 2 `i -> 0 `i ! != -> . . _PORTAbits 0 1 `i -> 0 `i 114  ]
+{
+"135
+[; ;main.c: 135:                 if (display_value == 0) {
+[e $ ! == -> _display_value `ui -> -> 0 `i `ui 115  ]
+{
+"136
+[; ;main.c: 136:                     bip();
+[e ( _bip ..  ]
+"137
+[; ;main.c: 137:                     PORTCbits.RC4 = 0;
+[e = . . _PORTCbits 0 4 -> -> 0 `i `uc ]
+"138
+[; ;main.c: 138:                 } else if (display_value > 0) {
+}
+[e $U 116  ]
+[e :U 115 ]
+[e $ ! > -> _display_value `ui -> -> 0 `i `ui 117  ]
+{
+"139
+[; ;main.c: 139:                     --display_value;
+[e =- _display_value -> -> 1 `i `us ]
+"140
+[; ;main.c: 140:                 }
+}
+[e :U 117 ]
+[e :U 116 ]
+"141
+[; ;main.c: 141:             }
+}
+[e :U 114 ]
+"142
+[; ;main.c: 142:             TMR0 = 6;
+[e = _TMR0 -> -> 6 `i `uc ]
+"143
+[; ;main.c: 143:             tick_timer_count = 1;
+[e = _tick_timer_count -> -> -> 1 `i `l `ul ]
+"144
+[; ;main.c: 144:         }
+}
+[e :U 113 ]
+"145
+[; ;main.c: 145:         tick_timer_count++;
+[e ++ _tick_timer_count -> -> -> 1 `i `l `ul ]
+"154
+[; ;main.c: 154:         if (button_timer_count == 200) {
+[e $ ! == -> _button_timer_count `ui -> -> 200 `i `ui 118  ]
+{
+"155
+[; ;main.c: 155:             if (!PORTAbits.RA0) {
+[e $ ! ! != -> . . _PORTAbits 0 0 `i -> 0 `i 119  ]
+{
+"156
+[; ;main.c: 156:                 if (PORTAbits.RA2 && display_value != 9999)
+[e $ ! && != -> . . _PORTAbits 0 2 `i -> 0 `i != -> _display_value `ui -> -> 9999 `i `ui 120  ]
+"157
+[; ;main.c: 157:                     display_value++;
+[e ++ _display_value -> -> 1 `i `us ]
+[e :U 120 ]
+"158
+[; ;main.c: 158:                 if (PORTAbits.RA1 && display_value != 0)
+[e $ ! && != -> . . _PORTAbits 0 1 `i -> 0 `i != -> _display_value `ui -> -> 0 `i `ui 121  ]
+"159
+[; ;main.c: 159:                     display_value--;
+[e -- _display_value -> -> 1 `i `us ]
+[e :U 121 ]
+"160
+[; ;main.c: 160:             }
+}
+[e :U 119 ]
+"161
+[; ;main.c: 161:             button_timer_count = 1;
+[e = _button_timer_count -> -> 1 `i `us ]
+"162
+[; ;main.c: 162:         }
+}
+[e :U 118 ]
+"163
+[; ;main.c: 163:         button_timer_count++;
+[e ++ _button_timer_count -> -> 1 `i `us ]
+"166
+[; ;main.c: 166:         T0IF = 0;
+[e = _T0IF -> -> 0 `i `b ]
+"167
+[; ;main.c: 167:     }
+}
+[e :U 112 ]
+"168
+[; ;main.c: 168: }
+[e :UE 108 ]
+}
+"170
+[; ;main.c: 170: void bip() {
+[v _bip `(v ~T0 @X0 1 ef ]
+{
+[e :U _bip ]
+[f ]
+"172
+[; ;main.c: 172:     if (!is_enabled_bip) return;
+[e $ ! ! != -> _is_enabled_bip `i -> 0 `i 123  ]
+[e $UE 122  ]
+[e :U 123 ]
+"174
+[; ;main.c: 174:     PORTAbits.RA3 = 1;
+[e = . . _PORTAbits 0 3 -> -> 1 `i `uc ]
+"175
+[; ;main.c: 175:     _delay((unsigned long)((100)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"176
+[; ;main.c: 176:     PORTAbits.RA3 = 0;
+[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
+"177
+[; ;main.c: 177:     _delay((unsigned long)((100)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"178
+[; ;main.c: 178:     PORTAbits.RA3 = 1;
+[e = . . _PORTAbits 0 3 -> -> 1 `i `uc ]
+"179
+[; ;main.c: 179:     _delay((unsigned long)((100)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"180
+[; ;main.c: 180:     PORTAbits.RA3 = 0;
+[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
+"182
+[; ;main.c: 182:     is_enabled_bip = 0;
+[e = _is_enabled_bip -> -> 0 `i `a ]
+"183
+[; ;main.c: 183: }
+[e :UE 122 ]
+}
+"185
+[; ;main.c: 185: void trigger_relay() {
+[v _trigger_relay `(v ~T0 @X0 1 ef ]
+{
+[e :U _trigger_relay ]
+[f ]
+"186
+[; ;main.c: 186:     if (PORTCbits.RC4) return;
+[e $ ! != -> . . _PORTCbits 0 4 `i -> 0 `i 125  ]
+[e $UE 124  ]
+[e :U 125 ]
+"187
+[; ;main.c: 187:     PORTCbits.RC4 = 1;
+[e = . . _PORTCbits 0 4 -> -> 1 `i `uc ]
+"188
+[; ;main.c: 188: }
+[e :UE 124 ]
+}
+"190
+[; ;main.c: 190: void counters_reset() {
+[v _counters_reset `(v ~T0 @X0 1 ef ]
+{
+[e :U _counters_reset ]
+[f ]
+"191
+[; ;main.c: 191:     if (last_decrement_wait_time_multiplier ==
+[e $ ! == -> _last_decrement_wait_time_multiplier `ui -> _decrement_wait_time_multiplier `ui 127  ]
+"192
+[; ;main.c: 192:             decrement_wait_time_multiplier) return;
+[e $UE 126  ]
+[e :U 127 ]
+"194
+[; ;main.c: 194:     tick_timer_count = 1;
+[e = _tick_timer_count -> -> -> 1 `i `l `ul ]
+"195
+[; ;main.c: 195:     display_value = 0;
+[e = _display_value -> -> 0 `i `us ]
+"196
+[; ;main.c: 196:     last_decrement_wait_time_multiplier =
+[e = _last_decrement_wait_time_multiplier _decrement_wait_time_multiplier ]
+"198
+[; ;main.c: 198: }
+[e :UE 126 ]
+}
