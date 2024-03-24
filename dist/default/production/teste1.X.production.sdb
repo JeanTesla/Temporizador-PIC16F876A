@@ -37,25 +37,29 @@
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "3 C:\Users\Tesla\MPLABXProjects\teste1.X\common_anode_display.c
 [v _disp_print disp_print `(v  1 e 1 0 ]
-"31
+"30
 [v _disp_config_mode disp_config_mode `(v  1 e 1 0 ]
-"50
+"44
 [v _disp_set_byte disp_set_byte `(v  1 e 1 0 ]
+"103
+[v _disp_show_end disp_show_end `(v  1 e 1 0 ]
 "3 C:\Users\Tesla\MPLABXProjects\teste1.X\interruptions.c
 [v _config_global_interruptions config_global_interruptions `(v  1 e 1 0 ]
 "10
 [v _config_uart_interruption config_uart_interruption `(v  1 e 1 0 ]
 "17
 [v _config_timer_interruption config_timer_interruption `(v  1 e 1 0 ]
-"47 C:\Users\Tesla\MPLABXProjects\teste1.X\main.c
+"49 C:\Users\Tesla\MPLABXProjects\teste1.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"107
+"117
 [v _my_interruptions my_interruptions `II(v  1 e 1 0 ]
-"170
-[v _bip bip `(v  1 e 1 0 ]
-"185
+"177
+[v _beep beep `(v  1 e 1 0 ]
+"192
 [v _trigger_relay trigger_relay `(v  1 e 1 0 ]
-"190
+"197
+[v _change_multiplier change_multiplier `(v  1 e 1 0 ]
+"209
 [v _counters_reset counters_reset `(v  1 e 1 0 ]
 "3 C:\Users\Tesla\MPLABXProjects\teste1.X\uart_interface.c
 [v _uart_init uart_init `(v  1 e 1 0 ]
@@ -65,7 +69,7 @@
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "166
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
-[s S77 . 1 `uc 1 RA0 1 0 :1:0 
+[s S115 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -73,11 +77,11 @@
 `uc 1 RA5 1 0 :1:5 
 ]
 "181
-[u S84 . 1 `S77 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES84  1 e 1 @5 ]
+[u S122 . 1 `S115 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES122  1 e 1 @5 ]
 "216
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
-[s S311 . 1 `uc 1 RB0 1 0 :1:0 
+[s S325 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -87,11 +91,11 @@
 `uc 1 RB7 1 0 :1:7 
 ]
 "233 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f876a.h
-[u S320 . 1 `S311 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES320  1 e 1 @6 ]
+[u S334 . 1 `S325 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES334  1 e 1 @6 ]
 "278 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
-[s S170 . 1 `uc 1 RC0 1 0 :1:0 
+[s S82 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -101,9 +105,9 @@
 `uc 1 RC7 1 0 :1:7 
 ]
 "295
-[u S179 . 1 `S170 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES179  1 e 1 @7 ]
-[s S359 . 1 `uc 1 RBIF 1 0 :1:0 
+[u S91 . 1 `S82 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES91  1 e 1 @7 ]
+[s S373 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -113,13 +117,13 @@
 `uc 1 GIE 1 0 :1:7 
 ]
 "383 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f876a.h
-[s S368 . 1 `uc 1 . 1 0 :2:0 
+[s S382 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S373 . 1 `S359 1 . 1 0 `S368 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES373  1 e 1 @11 ]
+[u S387 . 1 `S373 1 . 1 0 `S382 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES387  1 e 1 @11 ]
 [s S30 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 TMR1CS 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
@@ -140,7 +144,7 @@
 [v _T1CONbits T1CONbits `VES45  1 e 1 @16 ]
 "864 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f876a.h
 [v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
-[s S115 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S148 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -150,18 +154,18 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "894 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
-[s S124 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S157 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S128 . 1 `uc 1 . 1 0 :6:0 
+[s S161 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S131 . 1 `uc 1 . 1 0 :6:0 
+[s S164 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[u S134 . 1 `S115 1 . 1 0 `S124 1 . 1 0 `S128 1 . 1 0 `S131 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES134  1 e 1 @24 ]
+[u S167 . 1 `S148 1 . 1 0 `S157 1 . 1 0 `S161 1 . 1 0 `S164 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES167  1 e 1 @24 ]
 "959 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f876a.h
 [v _TXREG TXREG `VEuc  1 e 1 @25 ]
 "966 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
@@ -174,7 +178,7 @@
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
 "1337
 [v _TRISC TRISC `VEuc  1 e 1 @135 ]
-[s S399 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S413 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -183,11 +187,11 @@
 `uc 1 ADIE 1 0 :1:6 
 ]
 "1415 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f876a.h
-[u S407 . 1 `S399 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES407  1 e 1 @140 ]
+[u S421 . 1 `S413 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES421  1 e 1 @140 ]
 "1774
 [v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
-[s S274 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S288 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -197,15 +201,15 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "1800
-[s S283 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S297 . 1 `uc 1 TXD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 nTX8 1 0 :1:6 
 ]
-[s S287 . 1 `uc 1 . 1 0 :6:0 
+[s S301 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[u S290 . 1 `S274 1 . 1 0 `S283 1 . 1 0 `S287 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES290  1 e 1 @152 ]
+[u S304 . 1 `S288 1 . 1 0 `S297 1 . 1 0 `S301 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES304  1 e 1 @152 ]
 "1855
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
 "1862 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\PIC16F876A.h
@@ -245,46 +249,59 @@
 [v _last_decrement_wait_time_multiplier last_decrement_wait_time_multiplier `us  1 e 2 0 ]
 "40
 [v _is_enabled_bip is_enabled_bip `a  1 e 1 0 ]
-"47
+"41
+[v _is_active_count is_active_count `a  1 e 1 0 ]
+"49
 [v _main main `(v  1 e 1 0 ]
 {
-"105
+"115
 } 0
 "3 C:\Users\Tesla\MPLABXProjects\teste1.X\uart_interface.c
 [v _uart_init uart_init `(v  1 e 1 0 ]
 {
 "10
 } 0
-"185 C:\Users\Tesla\MPLABXProjects\teste1.X\main.c
+"192 C:\Users\Tesla\MPLABXProjects\teste1.X\main.c
 [v _trigger_relay trigger_relay `(v  1 e 1 0 ]
 {
-"188
+"195
 } 0
-"3 C:\Users\Tesla\MPLABXProjects\teste1.X\common_anode_display.c
+"103 C:\Users\Tesla\MPLABXProjects\teste1.X\common_anode_display.c
+[v _disp_show_end disp_show_end `(v  1 e 1 0 ]
+{
+"106
+[v disp_show_end@i i `i  1 a 2 8 ]
+"104
+[v disp_show_end@bytes bytes `[3]uc  1 a 3 5 ]
+"103
+[v disp_show_end@F1274 F1274 `[3]uc  1 s 3 F1274 ]
+"112
+} 0
+"3
 [v _disp_print disp_print `(v  1 e 1 0 ]
 {
 "22
-[v disp_print@i i `i  1 a 2 57 ]
+[v disp_print@i i `i  1 a 2 55 ]
 "19
 [v disp_print@array_digits array_digits `[4]uc  1 a 4 47 ]
 "5
-[v disp_print@aux_number aux_number `ui  1 a 2 55 ]
+[v disp_print@aux_number aux_number `ui  1 a 2 57 ]
 "7
 [v disp_print@number_of_digits number_of_digits `ui  1 a 2 53 ]
 "6
 [v disp_print@count count `ui  1 a 2 51 ]
 "3
 [v disp_print@number number `ui  1 p 2 43 ]
-"29
+"28
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@s s `*.4uc  1 a 1 wreg ]
-[u S863 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+[u S877 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
 "13
-[s S866 _IO_FILE 11 `S863 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v sprintf@f f `S866  1 a 11 32 ]
+[s S880 _IO_FILE 11 `S877 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S880  1 a 11 32 ]
 "12
 [v sprintf@ap ap `[1]*.4v  1 a 1 30 ]
 "9
@@ -297,48 +314,48 @@
 "1817 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S898 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.4S898  1 a 1 wreg ]
+[s S912 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S912  1 a 1 wreg ]
 "1820
 [v vfprintf@cfmt cfmt `*.24uc  1 a 1 25 ]
 "1817
-[v vfprintf@fp fp `*.4S898  1 a 1 wreg ]
+[v vfprintf@fp fp `*.4S912  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.24DCuc  1 p 1 22 ]
 [v vfprintf@ap ap `*.4*.4v  1 p 1 23 ]
 "1822
 "1817
-[v vfprintf@fp fp `*.4S898  1 a 1 24 ]
+[v vfprintf@fp fp `*.4S912  1 a 1 24 ]
 "1840
 } 0
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[s S898 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.4S898  1 a 1 wreg ]
-[u S911 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+[s S912 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S912  1 a 1 wreg ]
+[u S925 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S911  1 a 4 17 ]
+[v vfpfcnvrt@convarg convarg `S925  1 a 4 17 ]
 "1179
 [v vfpfcnvrt@c c `uc  1 a 1 21 ]
 [v vfpfcnvrt@cp cp `*.24uc  1 a 1 16 ]
 "1180
 [v vfpfcnvrt@done done `a  1 a 1 14 ]
 "1177
-[v vfpfcnvrt@fp fp `*.4S898  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.4S912  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.24uc  1 p 1 10 ]
 [v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 11 ]
 "1201
 "1177
-[v vfpfcnvrt@fp fp `*.4S898  1 a 1 15 ]
+[v vfpfcnvrt@fp fp `*.4S912  1 a 1 15 ]
 "1814
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[u S863 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
-[s S866 _IO_FILE 11 `S863 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.4S866  1 p 1 2 ]
+[u S877 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+[s S880 _IO_FILE 11 `S877 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.4S880  1 p 1 2 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
@@ -398,28 +415,23 @@
 [v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "30
 } 0
-"31 C:\Users\Tesla\MPLABXProjects\teste1.X\common_anode_display.c
+"30 C:\Users\Tesla\MPLABXProjects\teste1.X\common_anode_display.c
 [v _disp_config_mode disp_config_mode `(v  1 e 1 0 ]
 {
-"33
+"32
 [v disp_config_mode@configs configs `[4]uc  1 a 4 7 ]
-"31
+"30
 [v disp_config_mode@config_number config_number `s  1 p 2 3 ]
-[v disp_config_mode@F1268 F1268 `[4]uc  1 s 4 F1268 ]
-"48
+[v disp_config_mode@F1269 F1269 `[4]uc  1 s 4 F1269 ]
+"42
 } 0
-"50
+"44
 [v _disp_set_byte disp_set_byte `(v  1 e 1 0 ]
 {
 [v disp_set_byte@byte byte `uc  1 a 1 wreg ]
 [v disp_set_byte@byte byte `uc  1 a 1 wreg ]
 [v disp_set_byte@byte byte `uc  1 a 1 2 ]
-"104
-} 0
-"190 C:\Users\Tesla\MPLABXProjects\teste1.X\main.c
-[v _counters_reset counters_reset `(v  1 e 1 0 ]
-{
-"198
+"101
 } 0
 "3 C:\Users\Tesla\MPLABXProjects\teste1.X\interruptions.c
 [v _config_global_interruptions config_global_interruptions `(v  1 e 1 0 ]
@@ -436,15 +448,25 @@
 {
 "22
 } 0
-"107 C:\Users\Tesla\MPLABXProjects\teste1.X\main.c
+"197 C:\Users\Tesla\MPLABXProjects\teste1.X\main.c
+[v _change_multiplier change_multiplier `(v  1 e 1 0 ]
+{
+"207
+} 0
+"209
+[v _counters_reset counters_reset `(v  1 e 1 0 ]
+{
+"213
+} 0
+"177
+[v _beep beep `(v  1 e 1 0 ]
+{
+"190
+} 0
+"117
 [v _my_interruptions my_interruptions `II(v  1 e 1 0 ]
 {
-"168
-} 0
-"170
-[v _bip bip `(v  1 e 1 0 ]
-{
-"183
+"175
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]

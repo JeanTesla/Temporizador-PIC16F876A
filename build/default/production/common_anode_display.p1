@@ -259,41 +259,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;common_anode_display.c: 23:         PORTC |= 0b1111;
 [e =| _PORTC -> -> 15 `i `Vuc ]
 "24
-[; ;common_anode_display.c: 24:         PORTC ^= (1<<i);
-[e =^ _PORTC -> << -> 1 `i _i `Vuc ]
-"25
-[; ;common_anode_display.c: 25:          disp_set_byte(array_digits[i]);
+[; ;common_anode_display.c: 24:         disp_set_byte(array_digits[i]);
 [e ( _disp_set_byte (1 *U + &U _array_digits * -> -> _i `ui `ux -> -> # *U &U _array_digits `ui `ux ]
-"26
-[; ;common_anode_display.c: 26:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"27
-[; ;common_anode_display.c: 27:         PORTC ^= (1<<i);
+"25
+[; ;common_anode_display.c: 25:         PORTC ^= (1 << i);
 [e =^ _PORTC -> << -> 1 `i _i `Vuc ]
-"28
-[; ;common_anode_display.c: 28:     }
+"26
+[; ;common_anode_display.c: 26:         _delay((unsigned long)((2)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"27
+[; ;common_anode_display.c: 27:     }
 }
 [e ++ _i -> 1 `i ]
 [e :U 102 ]
 [e $ < -> _i `ui _number_of_digits 99  ]
 [e :U 100 ]
 }
-"29
-[; ;common_anode_display.c: 29: }
+"28
+[; ;common_anode_display.c: 28: }
 [e :UE 93 ]
 }
-"31
-[; ;common_anode_display.c: 31: void disp_config_mode(short int config_number) {
+"30
+[; ;common_anode_display.c: 30: void disp_config_mode(short int config_number) {
 [v _disp_config_mode `(v ~T0 @X0 1 ef1`s ]
 {
 [e :U _disp_config_mode ]
 [v _config_number `s ~T0 @X0 1 r1 ]
 [f ]
-[v F1268 `uc ~T0 @X0 -> 4 `i s ]
-[i F1268
+[v F1269 `uc ~T0 @X0 -> 4 `i s ]
+[i F1269
 :U ..
-"33
-[; ;common_anode_display.c: 33:     char configs[] = {'0', '1', '2', '3'};
+"32
+[; ;common_anode_display.c: 32:     char configs[] = {'0', '1', '2', '3'};
 -> -> 48 `ui `uc
 -> -> 49 `ui `uc
 -> -> 50 `ui `uc
@@ -301,201 +298,210 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _configs `uc ~T0 @X0 -> 4 `i a ]
-[e = _configs F1268 ]
+[e = _configs F1269 ]
+"34
+[; ;common_anode_display.c: 34:     PORTC |= 0b1111;
+[e =| _PORTC -> -> 15 `i `Vuc ]
 "35
-[; ;common_anode_display.c: 35:     PORTC |= 0b1111;
-[e =| _PORTC -> -> 15 `i `Vuc ]
-"36
-[; ;common_anode_display.c: 36:         PORTC ^= (1<<0);
-[e =^ _PORTC -> << -> 1 `i -> 0 `i `Vuc ]
-"39
-[; ;common_anode_display.c: 39:     disp_set_byte('c');
+[; ;common_anode_display.c: 35:     disp_set_byte('c');
 [e ( _disp_set_byte (1 -> -> 99 `ui `uc ]
-"40
-[; ;common_anode_display.c: 40:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"41
-[; ;common_anode_display.c: 41:     PORTC |= 0b1111;
+"36
+[; ;common_anode_display.c: 36:     PORTC ^= (1 << 0);
+[e =^ _PORTC -> << -> 1 `i -> 0 `i `Vuc ]
+"37
+[; ;common_anode_display.c: 37:     _delay((unsigned long)((2)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"38
+[; ;common_anode_display.c: 38:     PORTC |= 0b1111;
 [e =| _PORTC -> -> 15 `i `Vuc ]
-"42
-[; ;common_anode_display.c: 42:     PORTC ^= (1<<1);
-[e =^ _PORTC -> << -> 1 `i -> 1 `i `Vuc ]
-"45
-[; ;common_anode_display.c: 45:      disp_set_byte(configs[config_number]);
+"39
+[; ;common_anode_display.c: 39:     disp_set_byte(configs[config_number]);
 [e ( _disp_set_byte (1 -> *U + &U _configs * -> -> _config_number `us `ux -> -> # *U &U _configs `ui `ux `uc ]
-"46
-[; ;common_anode_display.c: 46:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"48
-[; ;common_anode_display.c: 48: }
+"40
+[; ;common_anode_display.c: 40:     PORTC ^= (1 << 1);
+[e =^ _PORTC -> << -> 1 `i -> 1 `i `Vuc ]
+"41
+[; ;common_anode_display.c: 41:     _delay((unsigned long)((2)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"42
+[; ;common_anode_display.c: 42: }
 [e :UE 103 ]
 }
-"50
-[; ;common_anode_display.c: 50: void disp_set_byte(unsigned char byte) {
+"44
+[; ;common_anode_display.c: 44: void disp_set_byte(unsigned char byte) {
 [v _disp_set_byte `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _disp_set_byte ]
 [v _byte `uc ~T0 @X0 1 r1 ]
 [f ]
-"51
-[; ;common_anode_display.c: 51:     switch (byte) {
+"45
+[; ;common_anode_display.c: 45:     switch (byte) {
 [e $U 106  ]
 {
-"52
-[; ;common_anode_display.c: 52:         case '0':
+"46
+[; ;common_anode_display.c: 46:         case '0':
 [e :U 107 ]
-"53
-[; ;common_anode_display.c: 53:             PORTB = 0x3F;
+"47
+[; ;common_anode_display.c: 47:             PORTB = 0x3F;
 [e = _PORTB -> -> 63 `i `uc ]
+"48
+[; ;common_anode_display.c: 48:             break;
+[e $U 105  ]
+"49
+[; ;common_anode_display.c: 49:         case '1':
+[e :U 108 ]
+"50
+[; ;common_anode_display.c: 50:             PORTB = 0x06;
+[e = _PORTB -> -> 6 `i `uc ]
+"51
+[; ;common_anode_display.c: 51:             break;
+[e $U 105  ]
+"52
+[; ;common_anode_display.c: 52:         case '2':
+[e :U 109 ]
+"53
+[; ;common_anode_display.c: 53:             PORTB = 0x5B;
+[e = _PORTB -> -> 91 `i `uc ]
 "54
 [; ;common_anode_display.c: 54:             break;
 [e $U 105  ]
 "55
-[; ;common_anode_display.c: 55:         case '1':
-[e :U 108 ]
+[; ;common_anode_display.c: 55:         case '3':
+[e :U 110 ]
 "56
-[; ;common_anode_display.c: 56:             PORTB = 0x06;
-[e = _PORTB -> -> 6 `i `uc ]
+[; ;common_anode_display.c: 56:             PORTB = 0x4F;
+[e = _PORTB -> -> 79 `i `uc ]
 "57
 [; ;common_anode_display.c: 57:             break;
 [e $U 105  ]
 "58
-[; ;common_anode_display.c: 58:         case '2':
-[e :U 109 ]
+[; ;common_anode_display.c: 58:         case '4':
+[e :U 111 ]
 "59
-[; ;common_anode_display.c: 59:             PORTB = 0x5B;
-[e = _PORTB -> -> 91 `i `uc ]
+[; ;common_anode_display.c: 59:             PORTB = 0x66;
+[e = _PORTB -> -> 102 `i `uc ]
 "60
 [; ;common_anode_display.c: 60:             break;
 [e $U 105  ]
 "61
-[; ;common_anode_display.c: 61:         case '3':
-[e :U 110 ]
+[; ;common_anode_display.c: 61:         case '5':
+[e :U 112 ]
 "62
-[; ;common_anode_display.c: 62:             PORTB = 0x4F;
-[e = _PORTB -> -> 79 `i `uc ]
+[; ;common_anode_display.c: 62:             PORTB = 0x6D;
+[e = _PORTB -> -> 109 `i `uc ]
 "63
 [; ;common_anode_display.c: 63:             break;
 [e $U 105  ]
 "64
-[; ;common_anode_display.c: 64:         case '4':
-[e :U 111 ]
+[; ;common_anode_display.c: 64:         case '6':
+[e :U 113 ]
 "65
-[; ;common_anode_display.c: 65:             PORTB = 0x66;
-[e = _PORTB -> -> 102 `i `uc ]
+[; ;common_anode_display.c: 65:             PORTB = 0x7D;
+[e = _PORTB -> -> 125 `i `uc ]
 "66
 [; ;common_anode_display.c: 66:             break;
 [e $U 105  ]
 "67
-[; ;common_anode_display.c: 67:         case '5':
-[e :U 112 ]
+[; ;common_anode_display.c: 67:         case '7':
+[e :U 114 ]
 "68
-[; ;common_anode_display.c: 68:             PORTB = 0x6D;
-[e = _PORTB -> -> 109 `i `uc ]
+[; ;common_anode_display.c: 68:             PORTB = 0x07;
+[e = _PORTB -> -> 7 `i `uc ]
 "69
 [; ;common_anode_display.c: 69:             break;
 [e $U 105  ]
 "70
-[; ;common_anode_display.c: 70:         case '6':
-[e :U 113 ]
+[; ;common_anode_display.c: 70:         case '8':
+[e :U 115 ]
 "71
-[; ;common_anode_display.c: 71:             PORTB = 0x7D;
-[e = _PORTB -> -> 125 `i `uc ]
+[; ;common_anode_display.c: 71:             PORTB = 0x7F;
+[e = _PORTB -> -> 127 `i `uc ]
 "72
 [; ;common_anode_display.c: 72:             break;
 [e $U 105  ]
 "73
-[; ;common_anode_display.c: 73:         case '7':
-[e :U 114 ]
+[; ;common_anode_display.c: 73:         case '9':
+[e :U 116 ]
 "74
-[; ;common_anode_display.c: 74:             PORTB = 0x07;
-[e = _PORTB -> -> 7 `i `uc ]
+[; ;common_anode_display.c: 74:             PORTB = 0x6F;
+[e = _PORTB -> -> 111 `i `uc ]
 "75
 [; ;common_anode_display.c: 75:             break;
 [e $U 105  ]
 "76
-[; ;common_anode_display.c: 76:         case '8':
-[e :U 115 ]
+[; ;common_anode_display.c: 76:         case 'a':
+[e :U 117 ]
 "77
-[; ;common_anode_display.c: 77:             PORTB = 0x7F;
-[e = _PORTB -> -> 127 `i `uc ]
+[; ;common_anode_display.c: 77:             PORTB = 0x77;
+[e = _PORTB -> -> 119 `i `uc ]
 "78
 [; ;common_anode_display.c: 78:             break;
 [e $U 105  ]
 "79
-[; ;common_anode_display.c: 79:         case '9':
-[e :U 116 ]
+[; ;common_anode_display.c: 79:         case 'b':
+[e :U 118 ]
 "80
-[; ;common_anode_display.c: 80:             PORTB = 0x6F;
-[e = _PORTB -> -> 111 `i `uc ]
+[; ;common_anode_display.c: 80:             PORTB = 0x7C;
+[e = _PORTB -> -> 124 `i `uc ]
 "81
 [; ;common_anode_display.c: 81:             break;
 [e $U 105  ]
 "82
-[; ;common_anode_display.c: 82:         case 'a':
-[e :U 117 ]
+[; ;common_anode_display.c: 82:         case 'c':
+[e :U 119 ]
 "83
-[; ;common_anode_display.c: 83:             PORTB = 0x77;
-[e = _PORTB -> -> 119 `i `uc ]
+[; ;common_anode_display.c: 83:             PORTB = 0x39;
+[e = _PORTB -> -> 57 `i `uc ]
 "84
 [; ;common_anode_display.c: 84:             break;
 [e $U 105  ]
 "85
-[; ;common_anode_display.c: 85:         case 'b':
-[e :U 118 ]
+[; ;common_anode_display.c: 85:         case 'd':
+[e :U 120 ]
 "86
-[; ;common_anode_display.c: 86:             PORTB = 0x7C;
-[e = _PORTB -> -> 124 `i `uc ]
+[; ;common_anode_display.c: 86:             PORTB = 0x5E;
+[e = _PORTB -> -> 94 `i `uc ]
 "87
 [; ;common_anode_display.c: 87:             break;
 [e $U 105  ]
 "88
-[; ;common_anode_display.c: 88:         case 'c':
-[e :U 119 ]
+[; ;common_anode_display.c: 88:         case 'e':
+[e :U 121 ]
 "89
-[; ;common_anode_display.c: 89:             PORTB = 0x39;
-[e = _PORTB -> -> 57 `i `uc ]
+[; ;common_anode_display.c: 89:             PORTB = 0x79;
+[e = _PORTB -> -> 121 `i `uc ]
 "90
 [; ;common_anode_display.c: 90:             break;
 [e $U 105  ]
 "91
-[; ;common_anode_display.c: 91:         case 'd':
-[e :U 120 ]
+[; ;common_anode_display.c: 91:         case 'f':
+[e :U 122 ]
 "92
-[; ;common_anode_display.c: 92:             PORTB = 0x5E;
-[e = _PORTB -> -> 94 `i `uc ]
+[; ;common_anode_display.c: 92:             PORTB = 0x71;
+[e = _PORTB -> -> 113 `i `uc ]
 "93
 [; ;common_anode_display.c: 93:             break;
 [e $U 105  ]
 "94
-[; ;common_anode_display.c: 94:         case 'e':
-[e :U 121 ]
+[; ;common_anode_display.c: 94:         case 'n':
+[e :U 123 ]
 "95
-[; ;common_anode_display.c: 95:             PORTB = 0x79;
-[e = _PORTB -> -> 121 `i `uc ]
+[; ;common_anode_display.c: 95:             PORTB = 0b1010100;
+[e = _PORTB -> -> 84 `i `uc ]
 "96
 [; ;common_anode_display.c: 96:             break;
 [e $U 105  ]
 "97
-[; ;common_anode_display.c: 97:         case 'f':
-[e :U 122 ]
+[; ;common_anode_display.c: 97:         default:
+[e :U 124 ]
 "98
-[; ;common_anode_display.c: 98:             PORTB = 0x71;
-[e = _PORTB -> -> 113 `i `uc ]
+[; ;common_anode_display.c: 98:             PORTB = 0xFF;
+[e = _PORTB -> -> 255 `i `uc ]
 "99
 [; ;common_anode_display.c: 99:             break;
 [e $U 105  ]
 "100
-[; ;common_anode_display.c: 100:         default:
-[e :U 123 ]
-"101
-[; ;common_anode_display.c: 101:             PORTB = 0xFF;
-[e = _PORTB -> -> 255 `i `uc ]
-"102
-[; ;common_anode_display.c: 102:             break;
-[e $U 105  ]
-"103
-[; ;common_anode_display.c: 103:     }
+[; ;common_anode_display.c: 100:     }
 }
 [e $U 105  ]
 [e :U 106 ]
@@ -515,11 +521,62 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> 100 `ui `i 120
  , $ -> -> 101 `ui `i 121
  , $ -> -> 102 `ui `i 122
- 123 ]
+ , $ -> -> 110 `ui `i 123
+ 124 ]
 [e :U 105 ]
-"104
-[; ;common_anode_display.c: 104: }
+"101
+[; ;common_anode_display.c: 101: }
 [e :UE 104 ]
+}
+"103
+[; ;common_anode_display.c: 103: void disp_show_end() {
+[v _disp_show_end `(v ~T0 @X0 1 ef ]
+{
+[e :U _disp_show_end ]
+[f ]
+[v F1274 `uc ~T0 @X0 -> 3 `i s ]
+[i F1274
+:U ..
+"104
+[; ;common_anode_display.c: 104:     char bytes[] = {'e', 'n', 'd'};
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+..
+]
+[v _bytes `uc ~T0 @X0 -> 3 `i a ]
+[e = _bytes F1274 ]
+"106
+[; ;common_anode_display.c: 106:     for (int i = 0; i < 3; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 126  ]
+[e $U 127  ]
+[e :U 126 ]
+{
+"107
+[; ;common_anode_display.c: 107:         PORTC |= 0b1111;
+[e =| _PORTC -> -> 15 `i `Vuc ]
+"108
+[; ;common_anode_display.c: 108:         disp_set_byte(bytes[i]);
+[e ( _disp_set_byte (1 -> *U + &U _bytes * -> -> _i `ui `ux -> -> # *U &U _bytes `ui `ux `uc ]
+"109
+[; ;common_anode_display.c: 109:         PORTC ^= (1 << i);
+[e =^ _PORTC -> << -> 1 `i _i `Vuc ]
+"110
+[; ;common_anode_display.c: 110:         _delay((unsigned long)((2)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"111
+[; ;common_anode_display.c: 111:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 3 `i 126  ]
+[e :U 127 ]
+}
+"112
+[; ;common_anode_display.c: 112: }
+[e :UE 125 ]
 }
 [p f _sprintf 8388736 ]
 [a 1C 37 100 0 ]

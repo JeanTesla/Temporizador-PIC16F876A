@@ -1949,6 +1949,7 @@ void __attribute__((picinterrupt(("")))) my_uart_interruption();
 void disp_print(unsigned int number);
 void disp_config_mode(short int config_number);
 void disp_set_byte(unsigned char);
+void disp_show_end();
 # 12 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\stdbool.h" 1 3
@@ -1973,10 +1974,12 @@ unsigned short int button_timer_count = 1,
         last_decrement_wait_time_multiplier = 1;
 
 _Bool is_enabled_bip = 0;
+_Bool is_active_count = 0;
 
 void __attribute__((picinterrupt(("")))) my_interruptions();
-void bip();
+void beep();
 void trigger_relay();
+void change_multiplier();
 void counters_reset();
 
 void main(void) {
@@ -1999,41 +2002,49 @@ void main(void) {
         if (display_value > 0) {
             is_enabled_bip = 1;
             trigger_relay();
+            disp_print(display_value);
+            is_active_count = 1;
+        } else {
+            if (is_active_count) {
+                PORTCbits.RC4 = 0;
+                beep();
+                is_active_count = 0;
+                counters_reset();
+            }
+            disp_show_end();
         }
 
         while (PORTAbits.RA0) {
             if (PORTAbits.RA2 && (config_mode_value < 3)) {
-                    config_mode_value++;
-                    _delay((unsigned long)((250)*(4000000/4000.0)));
+                config_mode_value++;
+                _delay((unsigned long)((250)*(4000000/4000.0)));
             }
             if (PORTAbits.RA1 && (config_mode_value > 1)) {
-                    config_mode_value--;
-                    _delay((unsigned long)((250)*(4000000/4000.0)));
+                config_mode_value--;
+                _delay((unsigned long)((250)*(4000000/4000.0)));
             }
 
             switch (config_mode_value) {
                 case 1:
 
                     decrement_wait_time_multiplier = 1;
-                    counters_reset();
+                    change_multiplier();
                     break;
                 case 2:
 
                     decrement_wait_time_multiplier = 60;
-                    counters_reset();
+                    change_multiplier();
                     break;
                 case 3:
 
                     decrement_wait_time_multiplier = 3600;
-                    counters_reset();
+                    change_multiplier();
                     break;
             }
 
             disp_config_mode(config_mode_value);
 
         }
-
-        disp_print(display_value);
 
     }
     return;
@@ -2054,16 +2065,13 @@ void __attribute__((picinterrupt(("")))) my_interruptions() {
     }
 
     if (T0IF) {
-# 130 "main.c"
+# 140 "main.c"
         if (tick_timer_count ==
                 (1000 * decrement_wait_time_multiplier)
                 ) {
 
             if (!PORTAbits.RA2 && !PORTAbits.RA1) {
-                if (display_value == 0) {
-                    bip();
-                    PORTCbits.RC4 = 0;
-                } else if (display_value > 0) {
+                if (display_value > 0) {
                     --display_value;
                 }
             }
@@ -2071,13 +2079,13 @@ void __attribute__((picinterrupt(("")))) my_interruptions() {
             tick_timer_count = 1;
         }
         tick_timer_count++;
-# 154 "main.c"
+# 161 "main.c"
         if (button_timer_count == 200) {
             if (!PORTAbits.RA0) {
                 if (PORTAbits.RA2 && display_value != 9999)
-                    display_value++;
+                    ++display_value;
                 if (PORTAbits.RA1 && display_value != 0)
-                    display_value--;
+                    --display_value;
             }
             button_timer_count = 1;
         }
@@ -2088,7 +2096,7 @@ void __attribute__((picinterrupt(("")))) my_interruptions() {
     }
 }
 
-void bip() {
+void beep() {
 
     if (!is_enabled_bip) return;
 
@@ -2108,12 +2116,20 @@ void trigger_relay() {
     PORTCbits.RC4 = 1;
 }
 
-void counters_reset() {
+void change_multiplier() {
     if (last_decrement_wait_time_multiplier ==
             decrement_wait_time_multiplier) return;
 
-    tick_timer_count = 1;
-    display_value = 0;
+    PORTCbits.RC4 = 0;
+    beep();
+    counters_reset();
+
     last_decrement_wait_time_multiplier =
             decrement_wait_time_multiplier;
+}
+
+void counters_reset(){
+    tick_timer_count = 1;
+    display_value = 0;
+    TMR0 = 6;
 }

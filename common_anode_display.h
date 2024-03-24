@@ -7,4 +7,5 @@
 void disp_print(unsigned int number);
 void disp_config_mode(short int config_number);
 void disp_set_byte(unsigned char);
+void disp_show_end();
 

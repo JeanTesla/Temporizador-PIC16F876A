@@ -19,12 +19,11 @@ void disp_print(unsigned int number) {
     unsigned char array_digits[4];
     sprintf(array_digits, "%d", number);
 
-    for (int i = 0; i < number_of_digits; i++) {       
+    for (int i = 0; i < number_of_digits; i++) {
         PORTC |= 0b1111;
-        PORTC ^= (1<<i);  
-         disp_set_byte(array_digits[i]);
-        __delay_ms(10);
-        PORTC ^= (1<<i);
+        disp_set_byte(array_digits[i]);
+        PORTC ^= (1 << i);
+        __delay_ms(2);
     }
 }
 
@@ -33,18 +32,13 @@ void disp_config_mode(short int config_number) {
     char configs[] = {'0', '1', '2', '3'};
 
     PORTC |= 0b1111;
-        PORTC ^= (1<<0);  
-    
-    
     disp_set_byte('c');
-    __delay_ms(10);
+    PORTC ^= (1 << 0);
+    __delay_ms(2);
     PORTC |= 0b1111;
-    PORTC ^= (1<<1);
-
-    
-     disp_set_byte(configs[config_number]);
-    __delay_ms(10);
-    
+    disp_set_byte(configs[config_number]);
+    PORTC ^= (1 << 1);
+    __delay_ms(2);
 }
 
 void disp_set_byte(unsigned char byte) {
@@ -97,8 +91,22 @@ void disp_set_byte(unsigned char byte) {
         case 'f':
             PORTB = 0x71;
             break;
+        case 'n':
+            PORTB = 0b1010100;
+            break;
         default:
             PORTB = 0xFF;
             break;
+    }
+}
+
+void disp_show_end() {
+    char bytes[] = {'e', 'n', 'd'};
+
+    for (int i = 0; i < 3; i++) {
+        PORTC |= 0b1111;
+        disp_set_byte(bytes[i]);
+        PORTC ^= (1 << i);
+        __delay_ms(2);
     }
 }

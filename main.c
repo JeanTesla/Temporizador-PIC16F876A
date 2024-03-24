@@ -38,10 +38,12 @@ unsigned short int button_timer_count = 1,
         last_decrement_wait_time_multiplier = 1;
 
 bool is_enabled_bip = false;
+bool is_active_count = false;
 
 void __interrupt() my_interruptions();
-void bip();
+void beep();
 void trigger_relay();
+void change_multiplier();
 void counters_reset();
 
 void main(void) {
@@ -64,41 +66,49 @@ void main(void) {
         if (display_value > 0) {
             is_enabled_bip = true;
             trigger_relay();
+            disp_print(display_value);
+            is_active_count = true;
+        } else {
+            if (is_active_count) {
+                RELAY = 0;
+                beep();
+                is_active_count = false;
+                counters_reset();
+            }
+            disp_show_end();
         }
 
         while (BTN_CONFIG_MODE) {
-            if (BTN_UP && (config_mode_value < 3)) {               
-                    config_mode_value++;
-                    __delay_ms(250);               
+            if (BTN_UP && (config_mode_value < 3)) {
+                config_mode_value++;
+                __delay_ms(250);
             }
-            if (BTN_DOWN && (config_mode_value > 1)) {               
-                    config_mode_value--;
-                    __delay_ms(250);            
+            if (BTN_DOWN && (config_mode_value > 1)) {
+                config_mode_value--;
+                __delay_ms(250);
             }
 
             switch (config_mode_value) {
                 case 1:
                     // 1 x 1000ms = 1 sec
                     decrement_wait_time_multiplier = 1;
-                    counters_reset();
+                    change_multiplier();
                     break;
                 case 2:
                     // 60 x 1000ms = 60 sec = 1 min
                     decrement_wait_time_multiplier = 60;
-                    counters_reset();
+                    change_multiplier();
                     break;
                 case 3:
                     // 3600 x 1000ms = 60 min = 1 hora
                     decrement_wait_time_multiplier = 3600;
-                    counters_reset();
+                    change_multiplier();
                     break;
             }
 
             disp_config_mode(config_mode_value);
 
         }
-
-        disp_print(display_value);
 
     }
     return;
@@ -132,10 +142,7 @@ void __interrupt() my_interruptions() {
                 ) {
             //Se não tiverem sendo pressionados
             if (!BTN_UP && !BTN_DOWN) {
-                if (display_value == 0) {
-                    bip();
-                    RELAY = 0;
-                } else if (display_value > 0) {
+                if (display_value > 0) {
                     --display_value;
                 }
             }
@@ -154,9 +161,9 @@ void __interrupt() my_interruptions() {
         if (button_timer_count == 200) {
             if (!BTN_CONFIG_MODE) {
                 if (BTN_UP && display_value != 9999)
-                    display_value++;
+                    ++display_value;
                 if (BTN_DOWN && display_value != 0)
-                    display_value--;
+                    --display_value;
             }
             button_timer_count = 1;
         }
@@ -167,7 +174,7 @@ void __interrupt() my_interruptions() {
     }
 }
 
-void bip() {
+void beep() {
 
     if (!is_enabled_bip) return;
 
@@ -187,12 +194,20 @@ void trigger_relay() {
     RELAY = 1;
 }
 
-void counters_reset() {
+void change_multiplier() {
     if (last_decrement_wait_time_multiplier ==
             decrement_wait_time_multiplier) return;
 
-    tick_timer_count = 1;
-    display_value = 0;
+    RELAY = 0;
+    beep();
+    counters_reset();
+
     last_decrement_wait_time_multiplier =
             decrement_wait_time_multiplier;
+}
+
+void counters_reset(){
+    tick_timer_count = 1;
+    display_value = 0;
+    TMR0 = 6;
 }
