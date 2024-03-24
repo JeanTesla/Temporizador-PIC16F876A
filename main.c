@@ -107,9 +107,7 @@ void main(void) {
             }
 
             disp_config_mode(config_mode_value);
-
         }
-
     }
     return;
 }
