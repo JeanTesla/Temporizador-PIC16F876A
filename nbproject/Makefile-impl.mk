@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=teste1.X
+PROJECTNAME=Temporizador-PIC16F876A
 
 # Active Configuration
 DEFAULTCONF=default

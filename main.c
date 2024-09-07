@@ -1,5 +1,5 @@
 /*
- * File:   newmain.c
+ * File:   main.c
  * Author: Tesla
  *
  * Created on 4 de Março de 2024, 13:52
@@ -23,9 +23,9 @@
 
 #define _XTAL_FREQ 4000000 
 
-#define BTN_UP PORTAbits.RA2
-#define BTN_DOWN PORTAbits.RA1
 #define BTN_CONFIG_MODE PORTAbits.RA0
+#define BTN_DOWN PORTAbits.RA1
+#define BTN_UP PORTAbits.RA2
 #define BUZZER PORTAbits.RA3
 #define RELAY PORTCbits.RC4
 
@@ -60,7 +60,7 @@ void main(void) {
 
     config_global_interruptions();
     uart_init();
-
+    
     while (1) {
 
         if (display_value > 0) {

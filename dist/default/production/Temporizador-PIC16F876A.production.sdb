@@ -1,0 +1,469 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F876A ]
+[d frameptr 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"1177 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\common_anode_display.c
+[v _disp_print disp_print `(v  1 e 1 0 ]
+"30
+[v _disp_config_mode disp_config_mode `(v  1 e 1 0 ]
+"44
+[v _disp_set_byte disp_set_byte `(v  1 e 1 0 ]
+"103
+[v _disp_show_end disp_show_end `(v  1 e 1 0 ]
+"3 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\interruptions.c
+[v _config_global_interruptions config_global_interruptions `(v  1 e 1 0 ]
+"10
+[v _config_uart_interruption config_uart_interruption `(v  1 e 1 0 ]
+"17
+[v _config_timer_interruption config_timer_interruption `(v  1 e 1 0 ]
+"49 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\main.c
+[v _main main `(v  1 e 1 0 ]
+"115
+[v _my_interruptions my_interruptions `II(v  1 e 1 0 ]
+"175
+[v _beep beep `(v  1 e 1 0 ]
+"190
+[v _trigger_relay trigger_relay `(v  1 e 1 0 ]
+"195
+[v _change_multiplier change_multiplier `(v  1 e 1 0 ]
+"207
+[v _counters_reset counters_reset `(v  1 e 1 0 ]
+"3 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\uart_interface.c
+[v _uart_init uart_init `(v  1 e 1 0 ]
+"12
+[v _uart_write_byte uart_write_byte `(v  1 e 1 0 ]
+"59 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\PIC16F876A.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"166
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S115 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"181
+[u S122 . 1 `S115 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES122  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S325 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic16f876a.h
+[u S334 . 1 `S325 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES334  1 e 1 @6 ]
+"278 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\PIC16F876A.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S82 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S91 . 1 `S82 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES91  1 e 1 @7 ]
+[s S373 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"383 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic16f876a.h
+[s S382 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S387 . 1 `S373 1 . 1 0 `S382 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES387  1 e 1 @11 ]
+[s S30 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+]
+"580 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\PIC16F876A.h
+[s S36 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S42 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+]
+[u S45 . 1 `S30 1 . 1 0 `S36 1 . 1 0 `S42 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES45  1 e 1 @16 ]
+"864 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic16f876a.h
+[v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
+[s S148 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"894 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\PIC16F876A.h
+[s S157 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S161 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S164 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S167 . 1 `S148 1 . 1 0 `S157 1 . 1 0 `S161 1 . 1 0 `S164 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES167  1 e 1 @24 ]
+"959 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic16f876a.h
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"966 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\PIC16F876A.h
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1155 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic16f876a.h
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1225 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\PIC16F876A.h
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1275
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1337
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S413 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1415 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic16f876a.h
+[u S421 . 1 `S413 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES421  1 e 1 @140 ]
+"1774
+[v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
+[s S288 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"1800
+[s S297 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S301 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S304 . 1 `S288 1 . 1 0 `S297 1 . 1 0 `S301 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES304  1 e 1 @152 ]
+"1855
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"1862 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\PIC16F876A.h
+[v _CMCON CMCON `VEuc  1 e 1 @156 ]
+"2004
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2294
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2504
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2579
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+"2705 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic16f876a.h
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2708
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"2732
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"153 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"32 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\main.c
+[v _tick_timer_count tick_timer_count `ul  1 e 4 0 ]
+"34
+[v _button_timer_count button_timer_count `us  1 e 2 0 ]
+"35
+[v _display_value display_value `us  1 e 2 0 ]
+"36
+[v _config_mode_value config_mode_value `us  1 e 2 0 ]
+"37
+[v _decrement_wait_time_multiplier decrement_wait_time_multiplier `us  1 e 2 0 ]
+"38
+[v _last_decrement_wait_time_multiplier last_decrement_wait_time_multiplier `us  1 e 2 0 ]
+"40
+[v _is_enabled_bip is_enabled_bip `a  1 e 1 0 ]
+"41
+[v _is_active_count is_active_count `a  1 e 1 0 ]
+"49
+[v _main main `(v  1 e 1 0 ]
+{
+"113
+} 0
+"3 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\uart_interface.c
+[v _uart_init uart_init `(v  1 e 1 0 ]
+{
+"10
+} 0
+"190 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\main.c
+[v _trigger_relay trigger_relay `(v  1 e 1 0 ]
+{
+"193
+} 0
+"103 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\common_anode_display.c
+[v _disp_show_end disp_show_end `(v  1 e 1 0 ]
+{
+"106
+[v disp_show_end@i i `i  1 a 2 6 ]
+"104
+[v disp_show_end@bytes bytes `[3]uc  1 a 3 3 ]
+"103
+[v disp_show_end@F1274 F1274 `[3]uc  1 s 3 F1274 ]
+"112
+} 0
+"3
+[v _disp_print disp_print `(v  1 e 1 0 ]
+{
+"22
+[v disp_print@i i `i  1 a 2 60 ]
+"19
+[v disp_print@array_digits array_digits `[4]uc  1 a 4 52 ]
+"5
+[v disp_print@aux_number aux_number `ui  1 a 2 62 ]
+"7
+[v disp_print@number_of_digits number_of_digits `ui  1 a 2 58 ]
+"6
+[v disp_print@count count `ui  1 a 2 56 ]
+"3
+[v disp_print@number number `ui  1 p 2 48 ]
+"28
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S877 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+"13
+[s S880 _IO_FILE 11 `S877 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S880  1 a 11 37 ]
+"12
+[v sprintf@ap ap `[1]*.4v  1 a 1 36 ]
+"9
+[v sprintf@s s `*.4uc  1 p 1 31 ]
+[v sprintf@fmt fmt `*.24DCuc  1 p 1 32 ]
+"23
+} 0
+"1817 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.24uc  1 a 1 30 ]
+[s S912 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S912  1 p 2 26 ]
+[v vfprintf@fmt fmt `*.24DCuc  1 p 1 28 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 29 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S925 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S925  1 a 4 21 ]
+"1179
+[v vfpfcnvrt@c c `uc  1 a 1 25 ]
+[v vfpfcnvrt@cp cp `*.24uc  1 a 1 20 ]
+"1180
+[v vfpfcnvrt@done done `a  1 a 1 19 ]
+[s S912 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S912  1 p 2 13 ]
+[v vfpfcnvrt@fmt fmt `*.4*.24uc  1 p 1 15 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 16 ]
+"1814
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S877 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+[s S880 _IO_FILE 11 `S877 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S880  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 6 ]
+"4
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"30 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\common_anode_display.c
+[v _disp_config_mode disp_config_mode `(v  1 e 1 0 ]
+{
+"32
+[v disp_config_mode@configs configs `[4]uc  1 a 4 5 ]
+"30
+[v disp_config_mode@config_number config_number `s  1 p 2 1 ]
+[v disp_config_mode@F1269 F1269 `[4]uc  1 s 4 F1269 ]
+"42
+} 0
+"44
+[v _disp_set_byte disp_set_byte `(v  1 e 1 0 ]
+{
+[v disp_set_byte@byte byte `uc  1 p 1 wreg ]
+[v disp_set_byte@byte byte `uc  1 p 1 wreg ]
+[v disp_set_byte@byte byte `uc  1 p 1 0 ]
+"101
+} 0
+"3 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\interruptions.c
+[v _config_global_interruptions config_global_interruptions `(v  1 e 1 0 ]
+{
+"8
+} 0
+"10
+[v _config_uart_interruption config_uart_interruption `(v  1 e 1 0 ]
+{
+"15
+} 0
+"17
+[v _config_timer_interruption config_timer_interruption `(v  1 e 1 0 ]
+{
+"22
+} 0
+"195 C:\Users\Tesla-notebook\Documents\Nosferatu\Temporizador-PIC16F876A\main.c
+[v _change_multiplier change_multiplier `(v  1 e 1 0 ]
+{
+"205
+} 0
+"207
+[v _counters_reset counters_reset `(v  1 e 1 0 ]
+{
+"211
+} 0
+"175
+[v _beep beep `(v  1 e 1 0 ]
+{
+"188
+} 0
+"115
+[v _my_interruptions my_interruptions `II(v  1 e 1 0 ]
+{
+"173
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
