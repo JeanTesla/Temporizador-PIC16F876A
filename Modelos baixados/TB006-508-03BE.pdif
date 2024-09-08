@@ -1,0 +1,160 @@
+;Proteus Design Interchange Format
+
+(PDIF
+  (vendor "Labcenter Electronics")
+  (version 1 0)
+  (library
+    (part "TB00650803BE"
+      (family "CON")
+      (package "CUI_TB00650803BE")
+      (description "2~24_Poles,_Screw_Type,_Horizontal,_5.08_Pitch,_26~14_(AWG),_Terminal_Block_Connector")
+      (attribute "PKG_TYPE" "CUI_TB00650803BE")
+      (attribute "MF" "CUI_Devices")
+      (attribute "PACKAGE" "None")
+      (attribute "PRICE" "None")
+      (attribute "CHECK_PRICES" "https://www.snapeda.com/parts/TB006-508-03BE/Same+Sky/view-part/?ref=eda")
+      (attribute "STANDARD" "Manufacturer_Recommendations")
+      (attribute "SNAPEDA_LINK" "https://www.snapeda.com/parts/TB006-508-03BE/Same+Sky/view-part/?ref=snap")
+      (attribute "MP" "TB006-508-03BE")
+      (attribute "PURCHASE-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=3591102&manufacturer=CUI_Devices&part_name=TB006-508-03BE&search_term=conn_screw_")
+      (attribute "CUI_PURCHASE_URL" "https://www.cuidevices.com/product/interconnect/connectors/terminal-blocks/tb006-508-series?utm_source=snapeda.com&utm_medium=referral&utm_campaign=snapedaBOM")
+      (attribute "AVAILABILITY" "In_Stock")
+      (attribute "MANUFACTURER" "CUI")
+      (gate
+        (swap 1)
+        (symbol "TB00650803BE")
+        (pin "1" 1 (type PS))
+        (pin "2" 2 (type PS))
+        (pin "3" 3 (type PS))
+      )
+    )
+    (symbol "TB00650803BE"
+      (units THOU)
+      (graphic
+        (stroke 1)
+        (path (pt -200 200) (pt 200 200) (pt 200 -200) (pt -200 -200) (pt -200 200) (closed))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -400.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -400.0 0.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -400.0 -100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+    )
+    (symbol "PIN_R0_U_L200"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt 200.0 0.0))
+      )
+    )
+    (package "CUI_TB00650803BE"
+      (units THOU)
+      (layer TSLK
+        (graphic
+          (stroke 5.0)
+          (path (pt -100.0 -161.42) (pt -100.0 161.42))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 500.0 161.42) (pt 500.0 -161.42))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -100.0 161.42) (pt 500.0 161.42))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 500.0 -161.42) (pt -100.0 -161.42))
+        )
+        (graphic
+          (stroke 7.87)
+          (circle (pt -3.94 200.79) (pt 3.94 200.79))
+        )
+      )
+      (layer TASM
+        (graphic
+          (stroke 5.0)
+          (path (pt -100.0 -161.42) (pt -100.0 161.42))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -100.0 161.42) (pt 500.0 161.42))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 500.0 161.42) (pt 500.0 -161.42))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 500.0 -161.42) (pt -100.0 -161.42))
+        )
+        (graphic
+          (stroke 7.87)
+          (circle (pt -3.94 200.79) (pt 3.94 200.79))
+        )
+      )
+      (layer OCCA
+        (graphic
+          (stroke 1.97)
+          (path (pt -109.84 171.26) (pt 509.84 171.26))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 509.84 -171.26) (pt -109.84 -171.26))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt -109.84 -171.26) (pt -109.84 171.26))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 509.84 171.26) (pt 509.84 -171.26))
+        )
+      )
+      (leg 1 (pt 0 0) (padstack 1))
+      (leg 2 (pt 200 0) (padstack 2))
+      (leg 3 (pt 400 0) (padstack 3))
+      (padstack 1
+        (hole 51)
+        (plated true)
+        (pad (layer TCOP) (square 76.77))
+        (pad (layer INNER) (square 76.77))
+        (pad (layer BCOP) (square 76.77))
+        (pad (layer TRES) (square 80.71))
+        (pad (layer BRES) (square 80.71))
+      )
+      (padstack 2
+        (hole 51)
+        (plated true)
+        (pad (layer TCOP) (round 76.77))
+        (pad (layer INNER) (round 76.77))
+        (pad (layer BCOP) (round 76.77))
+        (pad (layer TRES) (round 80.71))
+        (pad (layer BRES) (round 80.71))
+      )
+      (padstack 3
+        (hole 51)
+        (plated true)
+        (pad (layer TCOP) (round 76.77))
+        (pad (layer INNER) (round 76.77))
+        (pad (layer BCOP) (round 76.77))
+        (pad (layer TRES) (round 80.71))
+        (pad (layer BRES) (round 80.71))
+      )
+      (model TB006-508-03BE.step
+        (euler 0 0 0)
+        (offset 0 0 0)
+      )
+    )
+  )
+)

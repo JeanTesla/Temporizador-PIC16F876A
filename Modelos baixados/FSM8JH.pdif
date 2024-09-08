@@ -1,0 +1,269 @@
+;Proteus Design Interchange Format
+
+(PDIF
+  (vendor "Labcenter Electronics")
+  (version 1 0)
+  (library
+    (part "FSM8JH"
+      (family "SWI")
+      (package "SW_FSM8JH")
+      (description "Switch,_Pushbutton,_Tactile,_SPST,_Thru_Hole,_Vertical,_6MM,_Black")
+      (attribute "PKG_TYPE" "SW_FSM8JH")
+      (attribute "MF" "TE_Connectivity")
+      (attribute "DESCRIPTION" "_Switch,Pushbutton,Tactile,SPST,Thru_Hole,Vertical,6MM,Black_|_TE_Connectivity_FSM8JH_")
+      (attribute "PACKAGE" "None")
+      (attribute "PRICE" "None")
+      (attribute "CHECK_PRICES" "https://www.snapeda.com/parts/FSM8JH/TE+Connectivity+ALCOSWITCH+Switches/view-part/?ref=eda")
+      (attribute "STANDARD" "MANUFACTURER_RECOMMENDATIONS")
+      (attribute "PARTREV" "C10")
+      (attribute "SNAPEDA_LINK" "https://www.snapeda.com/parts/FSM8JH/TE+Connectivity+ALCOSWITCH+Switches/view-part/?ref=snap")
+      (attribute "MP" "FSM8JH")
+      (attribute "AVAILABILITY" "In_Stock")
+      (attribute "MANUFACTURER" "TE_CONNECTIVITY")
+      (gate
+        (swap 1)
+        (symbol "FSM8JH")
+        (pin "1" 1 (type PS))
+        (pin "2" 2 (type PS))
+        (pin "3" 3 (type PS))
+        (pin "4" 4 (type PS))
+      )
+    )
+    (symbol "FSM8JH"
+      (units THOU)
+      (graphic
+        (stroke 5.0)
+        (path (pt -150.0 150.0) (pt -150.0 100.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -150.0 100.0) (pt -150.0 -100.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -150.0 -100.0) (pt -150.0 -150.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt 150.0 150.0) (pt 150.0 100.0))
+      )
+      (graphic
+        (stroke 8.5)
+        (fill NONE)
+        (circle (pt -60 0) (pt -40 0))
+      )
+      (graphic
+        (stroke 8.5)
+        (fill NONE)
+        (circle (pt 40 0) (pt 60 0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt 150.0 100.0) (pt 150.0 -100.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt 150.0 -100.0) (pt 150.0 -150.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -50.0 0.0) (pt 50.0 50.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -150.0 150.0) (pt 150.0 150.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -150.0 -150.0) (pt 150.0 -150.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -100.0 0.0) (pt -50.0 0.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt 50.0 0.0) (pt 100.0 0.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -150.0 100.0) (pt -100.0 100.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -100.0 100.0) (pt -100.0 -100.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt -100.0 -100.0) (pt -150.0 -100.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt 150.0 100.0) (pt 100.0 100.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt 100.0 100.0) (pt 100.0 -100.0))
+      )
+      (graphic
+        (stroke 5.0)
+        (path (pt 100.0 -100.0) (pt 150.0 -100.0))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L100") (pt -250.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 139.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L100") (pt -250.0 -100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 139.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L100") (pt 250.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt -139.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L100") (pt 250.0 -100.0) (rot 0) (mir 0) (visible true))
+        (name (pt -139.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+    )
+    (symbol "PIN_R0_U_L100"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt 100.0 0.0))
+      )
+    )
+    (symbol "PIN_R180_U_L100"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt -100.0 0.0))
+      )
+    )
+    (package "SW_FSM8JH"
+      (units THOU)
+      (layer TSLK
+        (graphic
+          (stroke 5.0)
+          (path (pt -118.11 39.37) (pt -118.11 -39.37))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 118.11 39.37) (pt 118.11 -39.37))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -78.74 118.11) (pt 78.74 118.11))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -78.74 -118.11) (pt 78.74 -118.11))
+        )
+        (graphic
+          (stroke 5.0)
+          (fill NONE)
+          (circle (pt -68.9 0) (pt 68.9 0))
+        )
+        (graphic
+          (stroke 15.75)
+          (fill NONE)
+          (circle (pt -194.88 88.58) (pt -179.13 88.58))
+        )
+      )
+      (layer TASM
+        (graphic
+          (stroke 5.0)
+          (path (pt -117.91 117.91) (pt -117.91 -117.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -117.91 -117.91) (pt 117.91 -117.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 117.91 -117.91) (pt 117.91 117.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 117.91 117.91) (pt -117.91 117.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (fill NONE)
+          (circle (pt -68.9 0) (pt 68.9 0))
+        )
+        (graphic
+          (stroke 15.75)
+          (fill NONE)
+          (circle (pt -135.83 88.58) (pt -120.08 88.58))
+        )
+      )
+      (layer OCCA
+        (graphic
+          (stroke 1.97)
+          (path (pt -167.32 127.95) (pt 167.32 127.95))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 167.32 127.95) (pt 167.32 -127.76))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 167.32 -127.76) (pt -167.32 -127.76))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt -167.32 -127.76) (pt -167.32 127.95))
+        )
+      )
+      (leg 1 (pt -127.95 88.58) (padstack 1))
+      (leg 2 (pt -127.95 -88.58) (padstack 2))
+      (leg 3 (pt 127.95 88.58) (padstack 3))
+      (leg 4 (pt 127.95 -88.58) (padstack 4))
+      (padstack 1
+        (hole 38)
+        (plated true)
+        (pad (layer TCOP) (square 58.98))
+        (pad (layer INNER) (square 58.98))
+        (pad (layer BCOP) (square 58.98))
+        (pad (layer TRES) (square 62.91))
+        (pad (layer BRES) (square 62.91))
+      )
+      (padstack 2
+        (hole 38)
+        (plated true)
+        (pad (layer TCOP) (round 58.98))
+        (pad (layer INNER) (round 58.98))
+        (pad (layer BCOP) (round 58.98))
+        (pad (layer TRES) (round 62.91))
+        (pad (layer BRES) (round 62.91))
+      )
+      (padstack 3
+        (hole 38)
+        (plated true)
+        (pad (layer TCOP) (round 58.98))
+        (pad (layer INNER) (round 58.98))
+        (pad (layer BCOP) (round 58.98))
+        (pad (layer TRES) (round 62.91))
+        (pad (layer BRES) (round 62.91))
+      )
+      (padstack 4
+        (hole 38)
+        (plated true)
+        (pad (layer TCOP) (round 58.98))
+        (pad (layer INNER) (round 58.98))
+        (pad (layer BCOP) (round 58.98))
+        (pad (layer TRES) (round 62.91))
+        (pad (layer BRES) (round 62.91))
+      )
+      (model FSM8JH.step
+        (euler 0 0 0)
+        (offset 0 0 0)
+      )
+    )
+  )
+)

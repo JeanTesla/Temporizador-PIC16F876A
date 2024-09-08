@@ -1,0 +1,149 @@
+;Proteus Design Interchange Format
+
+(PDIF
+  (vendor "Labcenter Electronics")
+  (version 1 0)
+  (library
+    (part "CEM120142"
+      (family "ANA")
+      (package "CUI_CEM120142")
+      (description "Audio_Buzzer_Magnetic_1Vo-p_2Vo-p_20mA_1.5Vo-p_85dBA_Pin_Through_Hole_Tray")
+      (attribute "PKG_TYPE" "CUI_CEM120142")
+      (attribute "MF" "CUI_Devices")
+      (attribute "DESCRIPTION" "_Audio_Buzzer_Magnetic_1Vo-p_2Vo-p_20mA_1.5Vo-p_85dBA_Pin_Through_Hole_Tray_")
+      (attribute "PACKAGE" "_CUI")
+      (attribute "PRICE" "0.43_USD")
+      (attribute "PACKAGE" "None")
+      (attribute "CHECK_PRICES" "https://www.snapeda.com/parts/CEM-1201(42)/Same+Sky/view-part/?ref=eda")
+      (attribute "PRICE" "None")
+      (attribute "SNAPEDA_LINK" "https://www.snapeda.com/parts/CEM-1201(42)/Same+Sky/view-part/?ref=snap")
+      (attribute "MP" "CEM-1201(42)")
+      (attribute "PURCHASE-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=2755977&manufacturer=CUI_Devices&part_name=CEM-1201(42)&search_term=buzzer")
+      (attribute "AVAILABILITY" "In_Stock")
+      (attribute "CUI_PURCHASE_URL" "https://www.cuidevices.com/product/audio/buzzers/audio-transducers/cem-1201(42)?utm_source=snapeda.com&utm_medium=referral&utm_campaign=snapedaBOM")
+      (attribute "AVAILABILITY" "Good")
+      (attribute "DESCRIPTION" "12_mm,_1.5_V,_85_dB,_Through_Hole,_Magnetic_Audio_Transducer_Buzzer")
+      (gate
+        (swap 1)
+        (symbol "CEM120142")
+        (pin "M" M (type PS))
+        (pin "P" P (type PS))
+      )
+    )
+    (symbol "CEM120142"
+      (units THOU)
+      (graphic
+        (stroke 10.0)
+        (path (pt -25.0 50.0) (pt 0.0 50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 50.0) (pt 25.0 50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 25.0 50.0) (pt 25.0 -50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 25.0 -50.0) (pt 0.0 -50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -50.0) (pt -25.0 -50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -25.0 -50.0) (pt -25.0 50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 25.0 50.0) (pt 75.0 125.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 75.0 125.0) (pt 75.0 -125.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 75.0 -125.0) (pt 25.0 -50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 50.0) (pt 0.0 100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -50.0) (pt 0.0 -100.0))
+      )
+      (terminal
+        (body (symbol "PIN_R90_U_L100") (pt 0.0 -200.0) (rot 0) (mir 0) (visible true))
+        (name (pt 0.0 139.37) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+      )
+      (terminal
+        (body (symbol "PIN_R270_U_L100") (pt 0.0 200.0) (rot 0) (mir 0) (visible true))
+        (name (pt -0.0 -139.37) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+      )
+    )
+    (symbol "PIN_R90_U_L100"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt 0.0 100.0))
+      )
+    )
+    (symbol "PIN_R270_U_L100"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt -0.0 -100.0))
+      )
+    )
+    (package "CUI_CEM120142"
+      (units THOU)
+      (layer TSLK
+        (graphic
+          (stroke 5.0)
+          (fill NONE)
+          (circle (pt -236.22 0) (pt 236.22 0))
+        )
+      )
+      (layer TASM
+        (graphic
+          (stroke 5.0)
+          (fill NONE)
+          (circle (pt -236.22 0) (pt 236.22 0))
+        )
+      )
+      (layer OCCA
+        (graphic
+          (stroke 1.97)
+          (fill NONE)
+          (circle (pt -246.06 0) (pt 246.06 0))
+        )
+      )
+      (leg M (pt 127.95 0) (padstack 1))
+      (leg P (pt -127.95 0) (padstack 2))
+      (padstack 1
+        (hole 31)
+        (plated true)
+        (pad (layer TCOP) (round 51.5))
+        (pad (layer INNER) (round 51.5))
+        (pad (layer BCOP) (round 51.5))
+        (pad (layer TRES) (round 55.43))
+        (pad (layer BRES) (round 55.43))
+      )
+      (padstack 2
+        (hole 31)
+        (plated true)
+        (pad (layer TCOP) (round 51.5))
+        (pad (layer INNER) (round 51.5))
+        (pad (layer BCOP) (round 51.5))
+        (pad (layer TRES) (round 55.43))
+        (pad (layer BRES) (round 55.43))
+      )
+    )
+  )
+)

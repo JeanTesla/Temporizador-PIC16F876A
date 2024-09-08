@@ -1,0 +1,834 @@
+;Proteus Design Interchange Format
+
+(PDIF
+  (vendor "Labcenter Electronics")
+  (version 1 0)
+  (library
+    (part "LDSC512RI"
+      (family "ANA")
+      (package "LED_LDSC512RI")
+      (description "_DISPLAY,_7_SEGMENT,_14.2MM,_GREEN;_LED_Colour:Green;_Forward_Current_If:10mA;_Forward_Voltage:2.2V;_Luminous_Intensity:3.5mcd;_No._of_Digits_/_Alpha:1;_Character_Size:14.2mm;_Common_Connection:Common_Cathode;_Product_Range:-;_SVHC:No_SVHC_(27-Jun-2018)_")
+      (attribute "PKG_TYPE" "LED_LDSC512RI")
+      (attribute "MF" "Lumex_Optoelectronics")
+      (attribute "MAXIMUM_PACKAGE_HEIGHT" "8mm")
+      (attribute "PACKAGE" "DIP-10_Lumex")
+      (attribute "PRICE" "None")
+      (attribute "CHECK_PRICES" "https://www.snapeda.com/parts/LDSC512RI/Lumex/view-part/?ref=eda")
+      (attribute "STANDARD" "IPC-7351B")
+      (attribute "PARTREV" "A")
+      (attribute "SNAPEDA_LINK" "https://www.snapeda.com/parts/LDSC512RI/Lumex/view-part/?ref=snap")
+      (attribute "MP" "LDSC512RI")
+      (attribute "AVAILABILITY" "In_Stock")
+      (attribute "MANUFACTURER" "Lumex_Opto/Components_Inc.")
+      (gate
+        (swap 1)
+        (symbol "LDSC512RI")
+        (pin "A" 7 (type PS))
+        (pin "B" 6 (type PS))
+        (pin "C" 4 (type PS))
+        (pin "CC" 3 (type PS))
+        (pin "CC__1" 8 (type PS))
+        (pin "D" 2 (type PS))
+        (pin "DP" 5 (type PS))
+        (pin "E" 1 (type PS))
+        (pin "F" 9 (type PS))
+        (pin "G" 10 (type PS))
+      )
+    )
+    (symbol "LDSC512RI"
+      (units THOU)
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 900.0) (pt -300.0 -900.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 -900.0) (pt 300.0 -900.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 300.0 -900.0) (pt 300.0 -700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 300.0 -700.0) (pt 300.0 900.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 300.0 900.0) (pt -300.0 900.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 750.0) (pt -100.0 700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 700.0) (pt -100.0 650.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 650.0) (pt 0.0 700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 700.0) (pt -100.0 750.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 750.0) (pt 0.0 700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 700.0) (pt 0.0 650.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 700.0) (pt -100.0 700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 700.0) (pt 100.0 700.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -40.0 760.0) (pt -20.0 780.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -30.0 790.0)
+          (pt -10.0 770.0)
+          (pt 0.0 800.0)
+          (pt -30.0 790.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -70.0 780.0) (pt -50.0 800.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -60.0 810.0)
+          (pt -40.0 790.0)
+          (pt -30.0 820.0)
+          (pt -60.0 810.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 550.0) (pt -100.0 500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 500.0) (pt -100.0 450.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 450.0) (pt 0.0 500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 500.0) (pt -100.0 550.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 550.0) (pt 0.0 500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 500.0) (pt 0.0 450.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 500.0) (pt -100.0 500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 500.0) (pt 100.0 500.0))
+      )
+      (graphic
+        (stroke 20.0)
+        (fill NONE)
+        (circle (pt 90 500) (pt 110 500))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -40.0 560.0) (pt -20.0 580.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -30.0 590.0)
+          (pt -10.0 570.0)
+          (pt 0.0 600.0)
+          (pt -30.0 590.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -70.0 580.0) (pt -50.0 600.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -60.0 610.0)
+          (pt -40.0 590.0)
+          (pt -30.0 620.0)
+          (pt -60.0 610.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 350.0) (pt -100.0 300.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 300.0) (pt -100.0 250.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 250.0) (pt 0.0 300.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 300.0) (pt -100.0 350.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 350.0) (pt 0.0 300.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 300.0) (pt 0.0 250.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 300.0) (pt -100.0 300.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 300.0) (pt 100.0 300.0))
+      )
+      (graphic
+        (stroke 20.0)
+        (fill NONE)
+        (circle (pt 90 300) (pt 110 300))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -40.0 360.0) (pt -20.0 380.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -30.0 390.0)
+          (pt -10.0 370.0)
+          (pt 0.0 400.0)
+          (pt -30.0 390.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -70.0 380.0) (pt -50.0 400.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -60.0 410.0)
+          (pt -40.0 390.0)
+          (pt -30.0 420.0)
+          (pt -60.0 410.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 150.0) (pt -100.0 100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 100.0) (pt -100.0 50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 50.0) (pt 0.0 100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 100.0) (pt -100.0 150.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 150.0) (pt 0.0 100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 100.0) (pt 0.0 50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 100.0) (pt -100.0 100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 100.0) (pt 100.0 100.0))
+      )
+      (graphic
+        (stroke 20.0)
+        (fill NONE)
+        (circle (pt 90 100) (pt 110 100))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -40.0 160.0) (pt -20.0 180.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -30.0 190.0)
+          (pt -10.0 170.0)
+          (pt 0.0 200.0)
+          (pt -30.0 190.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -70.0 180.0) (pt -50.0 200.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -60.0 210.0)
+          (pt -40.0 190.0)
+          (pt -30.0 220.0)
+          (pt -60.0 210.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -50.0) (pt -100.0 -100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -100.0) (pt -100.0 -150.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -150.0) (pt 0.0 -100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -100.0) (pt -100.0 -50.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -50.0) (pt 0.0 -100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -100.0) (pt 0.0 -150.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 -100.0) (pt -100.0 -100.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -100.0) (pt 100.0 -100.0))
+      )
+      (graphic
+        (stroke 20.0)
+        (fill NONE)
+        (circle (pt 90 -100) (pt 110 -100))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -40.0 -40.0) (pt -20.0 -20.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -30.0 -10.0)
+          (pt -10.0 -30.0)
+          (pt 0.0 0.0)
+          (pt -30.0 -10.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -70.0 -20.0) (pt -50.0 0.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -60.0 10.0)
+          (pt -40.0 -10.0)
+          (pt -30.0 20.0)
+          (pt -60.0 10.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -250.0) (pt -100.0 -300.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -300.0) (pt -100.0 -350.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -350.0) (pt 0.0 -300.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -300.0) (pt -100.0 -250.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -250.0) (pt 0.0 -300.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -300.0) (pt 0.0 -350.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 -300.0) (pt -100.0 -300.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -300.0) (pt 100.0 -300.0))
+      )
+      (graphic
+        (stroke 20.0)
+        (fill NONE)
+        (circle (pt 90 -300) (pt 110 -300))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -40.0 -240.0) (pt -20.0 -220.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -30.0 -210.0)
+          (pt -10.0 -230.0)
+          (pt 0.0 -200.0)
+          (pt -30.0 -210.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -70.0 -220.0) (pt -50.0 -200.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -60.0 -190.0)
+          (pt -40.0 -210.0)
+          (pt -30.0 -180.0)
+          (pt -60.0 -190.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -450.0) (pt -100.0 -500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -500.0) (pt -100.0 -550.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -550.0) (pt 0.0 -500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -500.0) (pt -100.0 -450.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -450.0) (pt 0.0 -500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -500.0) (pt 0.0 -550.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 -500.0) (pt -100.0 -500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -500.0) (pt 100.0 -500.0))
+      )
+      (graphic
+        (stroke 20.0)
+        (fill NONE)
+        (circle (pt 90 -500) (pt 110 -500))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -40.0 -440.0) (pt -20.0 -420.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -30.0 -410.0)
+          (pt -10.0 -430.0)
+          (pt 0.0 -400.0)
+          (pt -30.0 -410.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -70.0 -420.0) (pt -50.0 -400.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -60.0 -390.0)
+          (pt -40.0 -410.0)
+          (pt -30.0 -380.0)
+          (pt -60.0 -390.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -650.0) (pt -100.0 -700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -700.0) (pt -100.0 -750.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -100.0 -750.0) (pt 0.0 -700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -700.0) (pt -100.0 -650.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -650.0) (pt 0.0 -700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -700.0) (pt 0.0 -750.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -300.0 -700.0) (pt -100.0 -700.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -40.0 -640.0) (pt -20.0 -620.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -30.0 -610.0)
+          (pt -10.0 -630.0)
+          (pt 0.0 -600.0)
+          (pt -30.0 -610.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -70.0 -620.0) (pt -50.0 -600.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -60.0 -590.0)
+          (pt -40.0 -610.0)
+          (pt -30.0 -580.0)
+          (pt -60.0 -590.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 -700.0) (pt 100.0 -700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 100.0 -700.0) (pt 300.0 -700.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 100.0 -700.0) (pt 100.0 700.0))
+      )
+      (graphic
+        (stroke 20.0)
+        (fill NONE)
+        (circle (pt 90 -700) (pt 110 -700))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -500.0 700.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -500.0 500.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -500.0 300.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L200") (pt 500.0 -700.0) (rot 0) (mir 0) (visible true))
+        (name (pt -239.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L200") (pt 500.0 -800.0) (rot 0) (mir 0) (visible true))
+        (name (pt -239.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -500.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -500.0 -700.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -500.0 -100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -500.0 -300.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -500.0 -500.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+    )
+    (symbol "PIN_R0_U_L200"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt 200.0 0.0))
+      )
+    )
+    (symbol "PIN_R180_U_L200"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt -200.0 0.0))
+      )
+    )
+    (package "LED_LDSC512RI"
+      (units THOU)
+      (layer TSLK
+        (graphic
+          (stroke 5.0)
+          (path (pt -374.02 248.03) (pt -374.02 -248.03))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -374.02 -248.03) (pt 374.02 -248.03))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 374.02 -248.03) (pt 374.02 248.03))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 374.02 248.03) (pt -374.02 248.03))
+        )
+        (graphic
+          (stroke 7.87)
+          (circle (pt -407.48 200) (pt -399.61 200))
+        )
+      )
+      (layer TASM
+        (graphic
+          (stroke 5.0)
+          (path (pt -374.02 248.03) (pt -374.02 -248.03))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -374.02 -248.03) (pt 374.02 -248.03))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 374.02 -248.03) (pt 374.02 248.03))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 374.02 248.03) (pt -374.02 248.03))
+        )
+        (graphic
+          (stroke 7.87)
+          (circle (pt -407.48 200) (pt -399.61 200))
+        )
+      )
+      (layer OCCA
+        (graphic
+          (stroke 1.97)
+          (path (pt -383.86 257.87) (pt -383.86 -257.87))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt -383.86 -257.87) (pt 383.86 -257.87))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 383.86 -257.87) (pt 383.86 257.87))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 383.86 257.87) (pt -383.86 257.87))
+        )
+      )
+      (leg 1 (pt -300 200) (padstack 1))
+      (leg 2 (pt -300 100) (padstack 2))
+      (leg 3 (pt -300 0) (padstack 3))
+      (leg 4 (pt -300 -100) (padstack 4))
+      (leg 5 (pt -300 -200) (padstack 5))
+      (leg 6 (pt 300 -200) (padstack 6))
+      (leg 7 (pt 300 -100) (padstack 7))
+      (leg 8 (pt 300 0) (padstack 8))
+      (leg 9 (pt 300 100) (padstack 9))
+      (leg 10 (pt 300 200) (padstack 10))
+      (padstack 1
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (square 47.95))
+        (pad (layer INNER) (square 47.95))
+        (pad (layer BCOP) (square 47.95))
+        (pad (layer TRES) (square 51.89))
+        (pad (layer BRES) (square 51.89))
+      )
+      (padstack 2
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (padstack 3
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (padstack 4
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (padstack 5
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (padstack 6
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (padstack 7
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (padstack 8
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (padstack 9
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (padstack 10
+        (hole 27)
+        (plated true)
+        (pad (layer TCOP) (round 47.95))
+        (pad (layer INNER) (round 47.95))
+        (pad (layer BCOP) (round 47.95))
+        (pad (layer TRES) (round 51.89))
+        (pad (layer BRES) (round 51.89))
+      )
+      (model LDSC512RI.step
+        (euler 0 0 0)
+        (offset 0 0 0)
+      )
+    )
+  )
+)

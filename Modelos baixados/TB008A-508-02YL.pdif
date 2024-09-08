@@ -1,0 +1,139 @@
+;Proteus Design Interchange Format
+
+(PDIF
+  (vendor "Labcenter Electronics")
+  (version 1 0)
+  (library
+    (part "TB008A50802YL"
+      (family "CON")
+      (package "CUI_TB008A50802YL")
+      (description "2~24_Poles,_Screw_Type,_45°,_5.08_Pitch,_24~12_(AWG),_Terminal_Block_Connector")
+      (attribute "PKG_TYPE" "CUI_TB008A50802YL")
+      (attribute "MF" "CUI_Devices")
+      (attribute "PACKAGE" "None")
+      (attribute "PRICE" "None")
+      (attribute "CHECK_PRICES" "https://www.snapeda.com/parts/TB008A-508-02YL/Same+Sky/view-part/?ref=eda")
+      (attribute "STANDARD" "Manufacturer_Recommendations")
+      (attribute "SNAPEDA_LINK" "https://www.snapeda.com/parts/TB008A-508-02YL/Same+Sky/view-part/?ref=snap")
+      (attribute "MP" "TB008A-508-02YL")
+      (attribute "CUI_PURCHASE_URL" "https://www.cuidevices.com/product/interconnect/connectors/terminal-blocks/tb008a-508-series?utm_source=snapeda.com&utm_medium=referral&utm_campaign=snapedaBOM")
+      (attribute "AVAILABILITY" "Not_in_stock")
+      (attribute "MANUFACTURER" "CUI")
+      (gate
+        (swap 1)
+        (symbol "TB008A50802YL")
+        (pin "1" 1 (type PS))
+        (pin "2" 2 (type PS))
+      )
+    )
+    (symbol "TB008A50802YL"
+      (units THOU)
+      (graphic
+        (stroke 1)
+        (path (pt -200 200) (pt 200 200) (pt 200 -100) (pt -200 -100) (pt -200 200) (closed))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -400.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L200") (pt -400.0 0.0) (rot 0) (mir 0) (visible true))
+        (name (pt 239.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+    )
+    (symbol "PIN_R0_U_L200"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt 200.0 0.0))
+      )
+    )
+    (package "CUI_TB008A50802YL"
+      (units THOU)
+      (layer TSLK
+        (graphic
+          (stroke 5.0)
+          (path (pt -100.0 -236.22) (pt -100.0 310.63))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 300.0 310.63) (pt 300.0 -236.22))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -100.0 310.63) (pt 300.0 310.63))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 300.0 -236.22) (pt -100.0 -236.22))
+        )
+        (graphic
+          (stroke 7.87)
+          (circle (pt -3.94 -275.59) (pt 3.94 -275.59))
+        )
+      )
+      (layer TASM
+        (graphic
+          (stroke 5.0)
+          (path (pt -100.0 -236.22) (pt -100.0 310.63))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -100.0 310.63) (pt 300.0 310.63))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 300.0 310.63) (pt 300.0 -236.22))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 300.0 -236.22) (pt -100.0 -236.22))
+        )
+        (graphic
+          (stroke 7.87)
+          (circle (pt -3.94 -275.59) (pt 3.94 -275.59))
+        )
+      )
+      (layer OCCA
+        (graphic
+          (stroke 1.97)
+          (path (pt -109.84 320.47) (pt 309.84 320.47))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 309.84 -246.06) (pt -109.84 -246.06))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt -109.84 -246.06) (pt -109.84 320.47))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 309.84 320.47) (pt 309.84 -246.06))
+        )
+      )
+      (leg 1 (pt 0 0) (padstack 1))
+      (leg 2 (pt 200 0) (padstack 2))
+      (padstack 1
+        (hole 62)
+        (plated true)
+        (pad (layer TCOP) (square 94.49))
+        (pad (layer INNER) (square 94.49))
+        (pad (layer BCOP) (square 94.49))
+        (pad (layer TRES) (square 98.43))
+        (pad (layer BRES) (square 98.43))
+      )
+      (padstack 2
+        (hole 62)
+        (plated true)
+        (pad (layer TCOP) (round 94.49))
+        (pad (layer INNER) (round 94.49))
+        (pad (layer BCOP) (round 94.49))
+        (pad (layer TRES) (round 98.43))
+        (pad (layer BRES) (round 98.43))
+      )
+    )
+  )
+)

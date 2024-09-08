@@ -1,0 +1,289 @@
+;Proteus Design Interchange Format
+
+(PDIF
+  (vendor "Labcenter Electronics")
+  (version 1 0)
+  (library
+    (part "MPB042C54SCAPRD"
+      (family "SWI")
+      (package "SW_MPB042C54SCAPRD")
+      (description "DPDT,_Through_Hole,_5.4_mm_Push,_On-(ON),_Straight_Terminal,_2.54_mm_Pitch,_Red_Cap,_Push_Button_Switch")
+      (attribute "PKG_TYPE" "SW_MPB042C54SCAPRD")
+      (attribute "MF" "CUI_Devices")
+      (attribute "MAXIMUM_PACKAGE_HEIGHT" "19.4mm")
+      (attribute "PACKAGE" "None")
+      (attribute "PRICE" "None")
+      (attribute "CHECK_PRICES" "https://www.snapeda.com/parts/MPB04-2C54-S-CAP-R-D/Same+Sky/view-part/?ref=eda")
+      (attribute "STANDARD" "Manufacturer_recommendations")
+      (attribute "PARTREV" "1.0")
+      (attribute "SNAPEDA_LINK" "https://www.snapeda.com/parts/MPB04-2C54-S-CAP-R-D/Same+Sky/view-part/?ref=snap")
+      (attribute "MP" "MPB04-2C54-S-CAP-R-D")
+      (attribute "PURCHASE-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7046872&manufacturer=CUI_Devices&part_name=MPB04-2C54-S-CAP-R-D&search_term=button_push")
+      (attribute "CUI_PURCHASE_URL" "https://www.cuidevices.com/product/switches/push-button-switches/mpb04-2c54-s-cap-r-d?utm_source=snapeda.com&utm_medium=referral&utm_campaign=snapedaBOM")
+      (attribute "AVAILABILITY" "In_Stock")
+      (attribute "MANUFACTURER" "CUI_Devices")
+      (gate
+        (swap 1)
+        (symbol "MPB042C54SCAPRD")
+        (pin "1" 1 (type PS))
+        (pin "2" 2 (type PS))
+        (pin "3" 3 (type PS))
+        (pin "4" 4 (type PS))
+        (pin "5" 5 (type PS))
+        (pin "6" 6 (type PS))
+      )
+    )
+    (symbol "MPB042C54SCAPRD"
+      (units THOU)
+      (graphic
+        (stroke 6.0)
+        (path (pt -100.0 200.0) (pt 0.0 240.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (fill NONE)
+        (circle (pt 87 300) (pt 113 300))
+      )
+      (graphic
+        (stroke 6.0)
+        (fill NONE)
+        (circle (pt 87 100) (pt 113 100))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 0.0 240.0) (pt 110.0 284.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 200.0 100.0) (pt 115.0 100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 200.0 300.0) (pt 115.0 300.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -100.0 200.0) (pt -200.0 200.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -100.0 -200.0) (pt 0.0 -160.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (fill NONE)
+        (circle (pt 87 -100) (pt 113 -100))
+      )
+      (graphic
+        (stroke 6.0)
+        (fill NONE)
+        (circle (pt 87 -300) (pt 113 -300))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 0.0 -160.0) (pt 110.0 -116.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 200.0 -300.0) (pt 115.0 -300.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 200.0 -100.0) (pt 115.0 -100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -100.0 -200.0) (pt -200.0 -200.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 0.0 240.0) (pt 0.0 -160.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -200.0 400.0) (pt -200.0 -400.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt -200.0 -400.0) (pt 200.0 -400.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 200.0 -400.0) (pt 200.0 400.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 200.0 400.0) (pt -200.0 400.0))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L100") (pt 300.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt -139.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L100") (pt -300.0 200.0) (rot 0) (mir 0) (visible true))
+        (name (pt 139.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L100") (pt 300.0 300.0) (rot 0) (mir 0) (visible true))
+        (name (pt -139.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L100") (pt 300.0 -300.0) (rot 0) (mir 0) (visible true))
+        (name (pt -139.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L100") (pt -300.0 -200.0) (rot 0) (mir 0) (visible true))
+        (name (pt 139.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L100") (pt 300.0 -100.0) (rot 0) (mir 0) (visible true))
+        (name (pt -139.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+    )
+    (symbol "PIN_R180_U_L100"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt -100.0 0.0))
+      )
+    )
+    (symbol "PIN_R0_U_L100"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt 100.0 0.0))
+      )
+    )
+    (package "SW_MPB042C54SCAPRD"
+      (units THOU)
+      (layer TSLK
+        (graphic
+          (stroke 9.84)
+          (circle (pt 218.15 107.09) (pt 226.02 107.09))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 192.91 192.91) (pt 192.91 -192.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -192.91 192.91) (pt -192.91 -192.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -192.91 192.91) (pt 192.91 192.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -192.91 -192.91) (pt 192.91 -192.91))
+        )
+      )
+      (layer TASM
+        (graphic
+          (stroke 5.0)
+          (path (pt 192.91 192.91) (pt 192.91 -192.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -192.91 192.91) (pt -192.91 -192.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -192.91 192.91) (pt 192.91 192.91))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -192.91 -192.91) (pt 192.91 -192.91))
+        )
+        (graphic
+          (stroke 9.84)
+          (circle (pt 218.15 107.09) (pt 226.02 107.09))
+        )
+      )
+      (layer OCCA
+        (graphic
+          (stroke 1.97)
+          (path (pt 202.76 202.76) (pt 202.76 -202.76))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt -202.76 202.76) (pt -202.76 -202.76))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt -202.76 202.76) (pt 202.76 202.76))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt -202.76 -202.76) (pt 202.76 -202.76))
+        )
+      )
+      (leg 1 (pt 100 100) (padstack 1))
+      (leg 2 (pt 0 100) (padstack 2))
+      (leg 3 (pt -100 100) (padstack 3))
+      (leg 4 (pt 100 -100) (padstack 4))
+      (leg 5 (pt 0 -100) (padstack 5))
+      (leg 6 (pt -100 -100) (padstack 6))
+      (padstack 1
+        (hole 31)
+        (plated true)
+        (pad (layer TCOP) (square 51.5))
+        (pad (layer INNER) (square 51.5))
+        (pad (layer BCOP) (square 51.5))
+        (pad (layer TRES) (square 55.43))
+        (pad (layer BRES) (square 55.43))
+      )
+      (padstack 2
+        (hole 31)
+        (plated true)
+        (pad (layer TCOP) (round 51.5))
+        (pad (layer INNER) (round 51.5))
+        (pad (layer BCOP) (round 51.5))
+        (pad (layer TRES) (round 55.43))
+        (pad (layer BRES) (round 55.43))
+      )
+      (padstack 3
+        (hole 31)
+        (plated true)
+        (pad (layer TCOP) (round 51.5))
+        (pad (layer INNER) (round 51.5))
+        (pad (layer BCOP) (round 51.5))
+        (pad (layer TRES) (round 55.43))
+        (pad (layer BRES) (round 55.43))
+      )
+      (padstack 4
+        (hole 31)
+        (plated true)
+        (pad (layer TCOP) (round 51.5))
+        (pad (layer INNER) (round 51.5))
+        (pad (layer BCOP) (round 51.5))
+        (pad (layer TRES) (round 55.43))
+        (pad (layer BRES) (round 55.43))
+      )
+      (padstack 5
+        (hole 31)
+        (plated true)
+        (pad (layer TCOP) (round 51.5))
+        (pad (layer INNER) (round 51.5))
+        (pad (layer BCOP) (round 51.5))
+        (pad (layer TRES) (round 55.43))
+        (pad (layer BRES) (round 55.43))
+      )
+      (padstack 6
+        (hole 31)
+        (plated true)
+        (pad (layer TCOP) (round 51.5))
+        (pad (layer INNER) (round 51.5))
+        (pad (layer BCOP) (round 51.5))
+        (pad (layer TRES) (round 55.43))
+        (pad (layer BRES) (round 55.43))
+      )
+    )
+  )
+)
